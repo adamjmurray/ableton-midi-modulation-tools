@@ -9,6 +9,8 @@
   - if num patterns is 1, disable output mode
 * New Avg output mode
 
+Update other devices to match the new shade of yellow
+
 Passthrough option in some/all devices?
 
 New Random By Note device
