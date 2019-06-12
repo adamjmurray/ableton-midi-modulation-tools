@@ -4,10 +4,10 @@
 * Make retrig per track? Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
 * Retrig seems to work now but there's still some issue with looping and retrig
 * Test save/restore behavior
-* Fix automation names (I think I set "link to scripting name" on all of them, and scripting name should be parameterizable with patcherargs for the sequencers)
-* "Add x 3" is getting truncated
-  - Speaking of Add x 3 - I think the intent there is to keep it simple with one step pattern vs combining the 3. So, what if there was an param to set the number of step patterns 1-3
-  - "Average" option for summing mode
+* Fix automation names
+* Finish wiring up the num patterns behavior (the output logic needs to take it into account)
+  - if num patterns is 1, disable output mode
+* New Avg output mode
 
 Passthrough option in some/all devices?
 
