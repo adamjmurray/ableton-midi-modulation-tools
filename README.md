@@ -1,11 +1,12 @@
 
 ## TODO:
-* Finish wiring up the new seqs
 * Finish wiring up the num patterns behavior (the output logic needs to take it into account)
   - Need to move the A,R,X buttons
   - if num patterns is 1, disable output mode
 * New Avg output mode
 * Fix automation names
+
+Shorten device names
 
 * Make retrig per track.
   - Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
