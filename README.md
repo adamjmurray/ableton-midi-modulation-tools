@@ -1,15 +1,16 @@
 
 ## TODO:
-* Add a Ctrl seq with customizable CCs - Use same 6 control approach as the other new devices
-* Make retrig per track? Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
-* Retrig seems to work now but there's still some issue with looping and retrig
-* Test save/restore behavior
-* Fix automation names
+* Finish wiring up the new seqs
 * Finish wiring up the num patterns behavior (the output logic needs to take it into account)
+  - Need to move the A,R,X buttons
   - if num patterns is 1, disable output mode
 * New Avg output mode
+* Fix automation names
 
-Update other devices to match the new shade of yellow
+* Make retrig per track.
+  - Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
+* Retrig seems to work now but there's still some issue with looping and retrig
+* Test save/restore behavior
 
 Passthrough option in some/all devices?
 
