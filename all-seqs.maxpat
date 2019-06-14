@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1107.0, 111.0, 969.0, 1229.0 ],
+		"rect" : [ 687.0, 85.0, 903.0, 1229.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,97 +39,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.219607843137255, 0.694117647058824, 0.376470588235294, 1.0 ],
-					"id" : "obj-46",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 432.08331298828125, 44.25, 41.0, 41.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 799.0, 688.0, 36.0, 36.0 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.0, 0.572549019607843, 0.996078431372549, 1.0 ],
-					"id" : "obj-47",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 432.08331298828125, 98.674682395644254, 41.0, 41.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 799.0, 744.444856328195442, 36.0, 36.0 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.717647058823529, 0.549019607843137, 0.996078431372549, 1.0 ],
-					"id" : "obj-48",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 432.08331298828125, 153.099364791288451, 41.0, 41.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 799.0, 797.970151122173888, 36.0, 36.0 ],
-					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "aftertouch",
-					"id" : "obj-12",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 639.0, 412.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "modulation",
-					"id" : "obj-13",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 497.0, 412.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "pitchbend",
-					"id" : "obj-14",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 784.0, 412.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ "@stepcolor", 0.722, 0.553, 1.0, 1.0, "@stepcolor2", 0.392, 0.302, 0.545, 1.0, "@signed", 0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-10",
+					"id" : "obj-19",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
@@ -137,7 +53,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 784.0, 298.5, 124.0, 89.0 ],
+					"patching_rect" : [ 784.0, 292.0, 91.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 1000.0, 637.0, 169.0 ],
 					"viewvisibility" : 1
@@ -152,7 +68,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-8",
+					"id" : "obj-16",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
@@ -160,7 +76,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 298.5, 124.0, 89.0 ],
+					"patching_rect" : [ 636.200000000000045, 292.0, 91.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 800.0, 637.0, 169.0 ],
 					"viewvisibility" : 1
@@ -175,6 +91,75 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "seq.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 488.400000000000034, 292.0, 89.0, 89.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 54.0, 600.0, 637.0, 169.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "@stepcolor", 0.902, 1.0, 0.0, 1.0, "@stepcolor2", 0.49, 0.545, 0.0, 1.0, "@signed", 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "seq.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 340.600000000000023, 292.0, 89.0, 89.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 54.0, 400.0, 637.0, 169.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "@stepcolor", 0.996, 0.584, 0.0, 1.0, "@stepcolor2", 0.541, 0.318, 0.0, 1.0, "@signed", 0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "seq.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 192.800000000000011, 292.0, 87.0, 89.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 54.0, 200.0, 637.0, 169.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "@stepcolor", 0.847, 0.243, 0.282, 1.0, "@stepcolor2", 0.463, 0.129, 0.153, 1.0, "@signed", 0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -183,10 +168,46 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 497.0, 298.5, 124.0, 89.0 ],
+					"patching_rect" : [ 45.0, 292.0, 89.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 600.0, 637.0, 169.0 ],
+					"presentation_rect" : [ 54.0, 0.0, 637.0, 169.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "aftertouch",
+					"id" : "obj-12",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 636.200000000000045, 412.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "modulation",
+					"id" : "obj-13",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 488.400000000000034, 412.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "pitchbend",
+					"id" : "obj-14",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 784.0, 412.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -379,7 +400,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 187.0, 412.0, 30.0, 30.0 ]
+					"patching_rect" : [ 192.800000000000011, 412.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -397,82 +418,13 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@stepcolor", 0.847, 0.243, 0.282, 1.0, "@stepcolor2", 0.463, 0.129, 0.153, 1.0, "@signed", 0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-66",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "seq.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 298.5, 128.0, 89.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 0.0, 637.0, 169.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "@stepcolor", 0.902, 1.0, 0.0, 1.0, "@stepcolor2", 0.49, 0.545, 0.0, 1.0, "@signed", 1 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-65",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "seq.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 332.0, 298.5, 129.5, 89.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 400.0, 637.0, 169.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "@stepcolor", 0.996, 0.584, 0.0, 1.0, "@stepcolor2", 0.541, 0.318, 0.0, 1.0, "@signed", 0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-50",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "seq.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 187.0, 298.5, 124.0, 89.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 200.0, 637.0, 169.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "pitchbend",
 					"id" : "obj-41",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 332.0, 412.0, 30.0, 30.0 ]
+					"patching_rect" : [ 340.600000000000023, 412.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -625,7 +577,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -680,8 +632,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -701,35 +674,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-70", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -743,418 +695,25 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-65::obj-19" : [ "live.step[7]", "live.step", 0 ],
-			"obj-8::obj-29" : [ "Play mode[5]", "Play mode", 0 ],
-			"obj-50::obj-36" : [ "Slew[2]", "Slew", 0 ],
-			"obj-8::obj-36" : [ "Slew[5]", "Slew", 0 ],
-			"obj-65::obj-5" : [ "live.step[6]", "live.step", 0 ],
-			"obj-66::obj-2" : [ "live.text[1]", "rand[1]", 0 ],
-			"obj-50::obj-19" : [ "live.step[4]", "live.step", 0 ],
-			"obj-7::obj-16" : [ "Auto-random 2[4]", "Auto random 2", 0 ],
-			"obj-7::obj-15" : [ "Ouput mode[4]", "Output mode", 0 ],
-			"obj-10::obj-26" : [ "Reset[10]", "Reset", 0 ],
-			"obj-50::obj-15" : [ "Ouput mode[2]", "Output mode", 0 ],
-			"obj-8::obj-20" : [ "live.step[14]", "live.step", 0 ],
-			"obj-7::obj-26" : [ "Reset[7]", "Reset", 0 ],
-			"obj-10::obj-19" : [ "live.step[17]", "live.step", 0 ],
-			"obj-10::obj-16" : [ "Auto-random 2[6]", "Auto random 2", 0 ],
-			"obj-66::obj-17" : [ "live.text[3]", "live.text", 0 ],
-			"obj-7::obj-36" : [ "Slew[4]", "Slew", 0 ],
-			"obj-10::obj-1" : [ "reset[6]", "reset[1]", 0 ],
-			"obj-66::obj-19" : [ "live.step[1]", "live.step", 0 ],
-			"obj-65::obj-26" : [ "Reset[5]", "Reset", 0 ],
-			"obj-8::obj-16" : [ "Auto-random 2[5]", "Auto random 2", 0 ],
-			"obj-66::obj-1" : [ "reset[1]", "reset[1]", 0 ],
-			"obj-65::obj-20" : [ "live.step[8]", "live.step", 0 ],
-			"obj-7::obj-12" : [ "Auto-random 1[4]", "Auto random 1", 0 ],
-			"obj-50::obj-16" : [ "Auto-random 2[2]", "Auto random 2", 0 ],
-			"obj-66::obj-15" : [ "Ouput mode[1]", "Output mode", 0 ],
-			"obj-50::obj-26" : [ "Reset[3]", "Reset", 0 ],
-			"obj-8::obj-1" : [ "reset[5]", "reset[1]", 0 ],
-			"obj-50::obj-25" : [ "live.text[8]", "live.text", 0 ],
-			"obj-7::obj-18" : [ "Reset[6]", "Reset", 0 ],
-			"obj-10::obj-17" : [ "live.text[20]", "live.text", 0 ],
-			"obj-50::obj-10" : [ "Sequencer size[2]", "Seq Size", 0 ],
-			"obj-8::obj-15" : [ "Ouput mode[5]", "Output mode", 0 ],
-			"obj-65::obj-17" : [ "live.text[12]", "live.text", 0 ],
-			"obj-66::obj-29" : [ "Play mode[1]", "Play mode", 0 ],
-			"obj-7::obj-2" : [ "live.text[13]", "rand[1]", 0 ],
-			"obj-10::obj-15" : [ "Ouput mode[6]", "Output mode", 0 ],
-			"obj-10::obj-29" : [ "Play mode[6]", "Play mode", 0 ],
-			"obj-50::obj-17" : [ "live.text[10]", "live.text", 0 ],
-			"obj-8::obj-2" : [ "live.text[18]", "rand[1]", 0 ],
-			"obj-65::obj-2" : [ "live.text[11]", "rand[1]", 0 ],
-			"obj-7::obj-29" : [ "Play mode[4]", "Play mode", 0 ],
-			"obj-10::obj-2" : [ "live.text[21]", "rand[1]", 0 ],
-			"obj-66::obj-5" : [ "live.step", "live.step", 0 ],
-			"obj-50::obj-12" : [ "Auto-random 1[2]", "Auto random 1", 0 ],
-			"obj-65::obj-25" : [ "live.text[4]", "live.text", 0 ],
-			"obj-7::obj-23" : [ "Auto-random 3[4]", "Auto-random 3", 0 ],
-			"obj-10::obj-54" : [ "Rate[6]", "Rate", 0 ],
-			"obj-65::obj-29" : [ "Play mode[3]", "Play mode", 0 ],
-			"obj-65::obj-1" : [ "reset[3]", "reset[1]", 0 ],
-			"obj-50::obj-20" : [ "live.step[3]", "live.step", 0 ],
-			"obj-8::obj-5" : [ "live.step[13]", "live.step", 0 ],
-			"obj-65::obj-15" : [ "Ouput mode[3]", "Output mode", 0 ],
-			"obj-66::obj-101" : [ "Number of patterns[1]", "Num. patterns", 0 ],
-			"obj-8::obj-18" : [ "Reset[8]", "Reset", 0 ],
-			"obj-65::obj-101" : [ "Number of patterns[3]", "Num. patterns", 0 ],
-			"obj-10::obj-10" : [ "Sequencer size[6]", "Seq Size", 0 ],
-			"obj-66::obj-10" : [ "Sequencer size[1]", "Seq Size", 0 ],
-			"obj-66::obj-12" : [ "Auto-random 1[1]", "Auto random 1", 0 ],
-			"obj-7::obj-54" : [ "Rate[4]", "Rate", 0 ],
-			"obj-7::obj-20" : [ "live.step[9]", "live.step", 0 ],
-			"obj-10::obj-25" : [ "live.text[19]", "live.text", 0 ],
-			"obj-7::obj-1" : [ "reset[4]", "reset[1]", 0 ],
-			"obj-10::obj-20" : [ "live.step[15]", "live.step", 0 ],
-			"obj-50::obj-2" : [ "live.text[9]", "rand[1]", 0 ],
-			"obj-8::obj-12" : [ "Auto-random 1[5]", "Auto random 1", 0 ],
-			"obj-66::obj-23" : [ "Auto-random 3[1]", "Auto-random 3", 0 ],
-			"obj-7::obj-25" : [ "live.text[15]", "live.text", 0 ],
-			"obj-50::obj-54" : [ "Rate[2]", "Rate", 0 ],
-			"obj-7::obj-101" : [ "Number of patterns[4]", "Num. patterns", 0 ],
-			"obj-65::obj-12" : [ "Auto-random 1[3]", "Auto random 1", 0 ],
-			"obj-8::obj-23" : [ "Auto-random 3[5]", "Auto-random 3", 0 ],
-			"obj-50::obj-18" : [ "Reset[2]", "Reset", 0 ],
-			"obj-7::obj-17" : [ "live.text[14]", "live.text", 0 ],
-			"obj-7::obj-19" : [ "live.step[10]", "live.step", 0 ],
-			"obj-10::obj-36" : [ "Slew[6]", "Slew", 0 ],
-			"obj-10::obj-12" : [ "Auto-random 1[6]", "Auto random 1", 0 ],
-			"obj-50::obj-1" : [ "reset[2]", "reset[1]", 0 ],
-			"obj-65::obj-23" : [ "Auto-random 3[3]", "Auto-random 3", 0 ],
-			"obj-10::obj-5" : [ "live.step[16]", "live.step", 0 ],
-			"obj-50::obj-23" : [ "Auto-random 3[2]", "Auto-random 3", 0 ],
-			"obj-8::obj-54" : [ "Rate[5]", "Rate", 0 ],
-			"obj-65::obj-16" : [ "Auto-random 2[3]", "Auto random 2", 0 ],
-			"obj-10::obj-101" : [ "Number of patterns[6]", "Num. patterns", 0 ],
-			"obj-50::obj-101" : [ "Number of patterns[2]", "Num. patterns", 0 ],
-			"obj-8::obj-26" : [ "Reset[9]", "Reset", 0 ],
-			"obj-66::obj-25" : [ "live.text[7]", "live.text", 0 ],
-			"obj-50::obj-29" : [ "Play mode[2]", "Play mode", 0 ],
-			"obj-65::obj-18" : [ "Reset[4]", "Reset", 0 ],
-			"obj-50::obj-5" : [ "live.step[5]", "live.step", 0 ],
-			"obj-8::obj-10" : [ "Sequencer size[5]", "Seq Size", 0 ],
-			"obj-66::obj-54" : [ "Rate[1]", "Rate", 0 ],
-			"obj-8::obj-25" : [ "live.text[16]", "live.text", 0 ],
-			"obj-66::obj-26" : [ "Reset[1]", "Reset", 0 ],
-			"obj-7::obj-10" : [ "Sequencer size[4]", "Seq Size", 0 ],
-			"obj-8::obj-101" : [ "Number of patterns[5]", "Num. patterns", 0 ],
-			"obj-66::obj-20" : [ "live.step[2]", "live.step", 0 ],
-			"obj-66::obj-16" : [ "Auto-random 2[1]", "Auto random 2", 0 ],
-			"obj-66::obj-36" : [ "Slew[1]", "Slew", 0 ],
-			"obj-8::obj-19" : [ "live.step[12]", "live.step", 0 ],
-			"obj-65::obj-54" : [ "Rate[3]", "Rate", 0 ],
-			"obj-8::obj-17" : [ "live.text[17]", "live.text", 0 ],
-			"obj-10::obj-23" : [ "Auto-random 3[6]", "Auto-random 3", 0 ],
-			"obj-65::obj-10" : [ "Sequencer size[3]", "Seq Size", 0 ],
-			"obj-7::obj-5" : [ "live.step[11]", "live.step", 0 ],
-			"obj-66::obj-18" : [ "Reset", "Reset", 0 ],
-			"obj-65::obj-36" : [ "Slew[3]", "Slew", 0 ],
-			"obj-10::obj-18" : [ "Reset[11]", "Reset", 0 ],
+			"obj-7::obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
+			"obj-7::obj-1" : [ "reset[1]", "reset[1]", 0 ],
+			"obj-7::obj-26" : [ "Reset[1]", "Reset", 0 ],
+			"obj-7::obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
+			"obj-7::obj-2" : [ "live.text[1]", "rand[1]", 0 ],
+			"obj-7::obj-19" : [ "live.step[1]", "live.step", 0 ],
+			"obj-7::obj-23" : [ "Auto Random Third[1]", "Auto Rand Third", 0 ],
+			"obj-7::obj-54" : [ "Rate[1]", "Rate", 0 ],
+			"obj-7::obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
+			"obj-7::obj-5" : [ "live.step", "live.step", 0 ],
+			"obj-7::obj-36" : [ "Slew[1]", "Slew", 0 ],
+			"obj-7::obj-18" : [ "Reset", "Reset", 0 ],
+			"obj-7::obj-10" : [ "Sequencer Size[1]", "Seq Size", 0 ],
+			"obj-7::obj-20" : [ "live.step[2]", "live.step", 0 ],
+			"obj-7::obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
+			"obj-7::obj-17" : [ "live.text[3]", "live.text", 0 ],
+			"obj-7::obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-7::obj-25" : [ "live.text[7]", "live.text", 0 ],
 			"parameterbanks" : 			{
-
-			}
-,
-			"parameter_overrides" : 			{
-				"obj-8::obj-29" : 				{
-					"parameter_longname" : "Play mode[5]"
-				}
-,
-				"obj-50::obj-36" : 				{
-					"parameter_longname" : "Slew[2]"
-				}
-,
-				"obj-8::obj-36" : 				{
-					"parameter_longname" : "Slew[5]"
-				}
-,
-				"obj-7::obj-16" : 				{
-					"parameter_longname" : "Auto-random 2[4]"
-				}
-,
-				"obj-7::obj-15" : 				{
-					"parameter_longname" : "Ouput mode[4]"
-				}
-,
-				"obj-10::obj-26" : 				{
-					"parameter_longname" : "Reset[10]"
-				}
-,
-				"obj-50::obj-15" : 				{
-					"parameter_longname" : "Ouput mode[2]"
-				}
-,
-				"obj-7::obj-26" : 				{
-					"parameter_longname" : "Reset[7]"
-				}
-,
-				"obj-10::obj-16" : 				{
-					"parameter_longname" : "Auto-random 2[6]"
-				}
-,
-				"obj-7::obj-36" : 				{
-					"parameter_longname" : "Slew[4]"
-				}
-,
-				"obj-10::obj-1" : 				{
-					"parameter_longname" : "reset[6]"
-				}
-,
-				"obj-65::obj-26" : 				{
-					"parameter_longname" : "Reset[5]"
-				}
-,
-				"obj-8::obj-16" : 				{
-					"parameter_longname" : "Auto-random 2[5]"
-				}
-,
-				"obj-7::obj-12" : 				{
-					"parameter_longname" : "Auto-random 1[4]"
-				}
-,
-				"obj-50::obj-16" : 				{
-					"parameter_longname" : "Auto-random 2[2]"
-				}
-,
-				"obj-50::obj-26" : 				{
-					"parameter_longname" : "Reset[3]"
-				}
-,
-				"obj-8::obj-1" : 				{
-					"parameter_longname" : "reset[5]"
-				}
-,
-				"obj-50::obj-25" : 				{
-					"parameter_longname" : "live.text[8]"
-				}
-,
-				"obj-7::obj-18" : 				{
-					"parameter_longname" : "Reset[6]"
-				}
-,
-				"obj-10::obj-17" : 				{
-					"parameter_longname" : "live.text[20]"
-				}
-,
-				"obj-50::obj-10" : 				{
-					"parameter_longname" : "Sequencer size[2]"
-				}
-,
-				"obj-8::obj-15" : 				{
-					"parameter_longname" : "Ouput mode[5]"
-				}
-,
-				"obj-65::obj-17" : 				{
-					"parameter_longname" : "live.text[12]"
-				}
-,
-				"obj-7::obj-2" : 				{
-					"parameter_longname" : "live.text[13]"
-				}
-,
-				"obj-10::obj-15" : 				{
-					"parameter_longname" : "Ouput mode[6]"
-				}
-,
-				"obj-10::obj-29" : 				{
-					"parameter_longname" : "Play mode[6]"
-				}
-,
-				"obj-50::obj-17" : 				{
-					"parameter_longname" : "live.text[10]"
-				}
-,
-				"obj-8::obj-2" : 				{
-					"parameter_longname" : "live.text[18]"
-				}
-,
-				"obj-65::obj-2" : 				{
-					"parameter_longname" : "live.text[11]"
-				}
-,
-				"obj-7::obj-29" : 				{
-					"parameter_longname" : "Play mode[4]"
-				}
-,
-				"obj-10::obj-2" : 				{
-					"parameter_longname" : "live.text[21]"
-				}
-,
-				"obj-50::obj-12" : 				{
-					"parameter_longname" : "Auto-random 1[2]"
-				}
-,
-				"obj-65::obj-25" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-7::obj-23" : 				{
-					"parameter_longname" : "Auto-random 3[4]"
-				}
-,
-				"obj-10::obj-54" : 				{
-					"parameter_longname" : "Rate[6]"
-				}
-,
-				"obj-65::obj-29" : 				{
-					"parameter_longname" : "Play mode[3]"
-				}
-,
-				"obj-65::obj-1" : 				{
-					"parameter_longname" : "reset[3]"
-				}
-,
-				"obj-65::obj-15" : 				{
-					"parameter_longname" : "Ouput mode[3]"
-				}
-,
-				"obj-8::obj-18" : 				{
-					"parameter_longname" : "Reset[8]"
-				}
-,
-				"obj-65::obj-101" : 				{
-					"parameter_longname" : "Number of patterns[3]"
-				}
-,
-				"obj-10::obj-10" : 				{
-					"parameter_longname" : "Sequencer size[6]"
-				}
-,
-				"obj-7::obj-54" : 				{
-					"parameter_longname" : "Rate[4]"
-				}
-,
-				"obj-10::obj-25" : 				{
-					"parameter_longname" : "live.text[19]"
-				}
-,
-				"obj-7::obj-1" : 				{
-					"parameter_longname" : "reset[4]"
-				}
-,
-				"obj-50::obj-2" : 				{
-					"parameter_longname" : "live.text[9]"
-				}
-,
-				"obj-8::obj-12" : 				{
-					"parameter_longname" : "Auto-random 1[5]"
-				}
-,
-				"obj-7::obj-25" : 				{
-					"parameter_longname" : "live.text[15]"
-				}
-,
-				"obj-50::obj-54" : 				{
-					"parameter_longname" : "Rate[2]"
-				}
-,
-				"obj-7::obj-101" : 				{
-					"parameter_longname" : "Number of patterns[4]"
-				}
-,
-				"obj-65::obj-12" : 				{
-					"parameter_longname" : "Auto-random 1[3]"
-				}
-,
-				"obj-8::obj-23" : 				{
-					"parameter_longname" : "Auto-random 3[5]"
-				}
-,
-				"obj-50::obj-18" : 				{
-					"parameter_longname" : "Reset[2]"
-				}
-,
-				"obj-7::obj-17" : 				{
-					"parameter_longname" : "live.text[14]"
-				}
-,
-				"obj-10::obj-36" : 				{
-					"parameter_longname" : "Slew[6]"
-				}
-,
-				"obj-10::obj-12" : 				{
-					"parameter_longname" : "Auto-random 1[6]"
-				}
-,
-				"obj-50::obj-1" : 				{
-					"parameter_longname" : "reset[2]"
-				}
-,
-				"obj-65::obj-23" : 				{
-					"parameter_longname" : "Auto-random 3[3]"
-				}
-,
-				"obj-50::obj-23" : 				{
-					"parameter_longname" : "Auto-random 3[2]"
-				}
-,
-				"obj-8::obj-54" : 				{
-					"parameter_longname" : "Rate[5]"
-				}
-,
-				"obj-65::obj-16" : 				{
-					"parameter_longname" : "Auto-random 2[3]"
-				}
-,
-				"obj-10::obj-101" : 				{
-					"parameter_longname" : "Number of patterns[6]"
-				}
-,
-				"obj-50::obj-101" : 				{
-					"parameter_longname" : "Number of patterns[2]"
-				}
-,
-				"obj-8::obj-26" : 				{
-					"parameter_longname" : "Reset[9]"
-				}
-,
-				"obj-50::obj-29" : 				{
-					"parameter_longname" : "Play mode[2]"
-				}
-,
-				"obj-65::obj-18" : 				{
-					"parameter_longname" : "Reset[4]"
-				}
-,
-				"obj-8::obj-10" : 				{
-					"parameter_longname" : "Sequencer size[5]"
-				}
-,
-				"obj-8::obj-25" : 				{
-					"parameter_longname" : "live.text[16]"
-				}
-,
-				"obj-7::obj-10" : 				{
-					"parameter_longname" : "Sequencer size[4]"
-				}
-,
-				"obj-8::obj-101" : 				{
-					"parameter_longname" : "Number of patterns[5]"
-				}
-,
-				"obj-65::obj-54" : 				{
-					"parameter_longname" : "Rate[3]"
-				}
-,
-				"obj-8::obj-17" : 				{
-					"parameter_longname" : "live.text[17]"
-				}
-,
-				"obj-10::obj-23" : 				{
-					"parameter_longname" : "Auto-random 3[6]"
-				}
-,
-				"obj-65::obj-10" : 				{
-					"parameter_longname" : "Sequencer size[3]"
-				}
-,
-				"obj-65::obj-36" : 				{
-					"parameter_longname" : "Slew[3]"
-				}
-,
-				"obj-10::obj-18" : 				{
-					"parameter_longname" : "Reset[11]"
-				}
 
 			}
 

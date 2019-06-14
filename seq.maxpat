@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 337.0, 481.0, 1009.0, 764.0 ],
+		"rect" : [ 337.0, 427.0, 1009.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,30 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 814.516642252604129, 15.96875, 150.0, 48.0 ],
+					"text" : "note: this is an enum, not a number, for better automation UX in Live"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 773.3499755859375, 41.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "comment",
@@ -98,7 +122,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "Controls how the pattern starts and loops.\n\n· Sync: Sync to the transport and loop\n· Trig: Restart on each note and loop\n· Once: Restart on each note without looping",
-					"annotation_name" : "Play mode",
+					"annotation_name" : "Playback Mode",
 					"appearance" : 4,
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
@@ -114,22 +138,22 @@
 					"presentation_rect" : [ 7.0, 85.5, 34.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "Sync", "Trig", "Once" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Play mode",
-							"parameter_longname" : "Play mode[1]",
+							"parameter_annotation_name" : "Playback Mode",
+							"parameter_longname" : "Playback Mode[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Play mode",
-							"parameter_enum" : [ "Sync", "Trig", "Once" ]
+							"parameter_shortname" : "Playback Mode"
 						}
 
 					}
 ,
 					"textjustification" : 0,
-					"varname" : "Play mode[1]"
+					"varname" : "Playback Mode[1]"
 				}
 
 			}
@@ -574,7 +598,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 383.0, 36.0, 30.0, 30.0 ]
 								}
 
@@ -1706,7 +1730,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 207.6500244140625, 40.0, 30.0, 30.0 ]
 								}
 
@@ -1909,7 +1933,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "The number of patterns in this sequencer. \n\nWhen there is more than one pattern, they output a single value per step as determined by the \"Out\" mode.",
-					"annotation_name" : "Number",
+					"annotation_name" : "Number of Patterns",
 					"appearance" : 4,
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
@@ -1920,27 +1944,26 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 711.8499755859375, 43.265625, 26.0, 16.5 ],
+					"patching_rect" : [ 773.3499755859375, 11.265625, 26.0, 16.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 27.73956298828125, 34.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 1,
+							"parameter_enum" : [ "1", "2", "3" ],
+							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Number",
-							"parameter_mmin" : 1.0,
-							"parameter_longname" : "Number of patterns[1]",
+							"parameter_annotation_name" : "Number of Patterns",
+							"parameter_longname" : "Number of Patterns[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 3.0,
+							"parameter_mmax" : 2,
 							"parameter_initial" : [ 3 ],
-							"parameter_shortname" : "Num. patterns",
-							"parameter_enum" : [ "Add", "Addx3", "Min", "Max", "Rand" ]
+							"parameter_shortname" : "Num Patterns"
 						}
 
 					}
 ,
-					"varname" : "Number of patterns[1]"
+					"varname" : "Number of Patterns[1]"
 				}
 
 			}
@@ -2256,8 +2279,8 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Controls how simultaneous steps are combined.\n\nOnly has an effect with Size x2 or x3.\n\n· Avg: The average value\n· Min: The minimum value\n· Max: The maximum value\n· Rand: Randomly one of the values",
-					"annotation_name" : "Output mode",
+					"annotation" : "Controls how simultaneous pattern steps are combined.\n\nOnly has an effect with Size x2 or x3.\n\n· Avg: The average value\n· Min: The minimum value\n· Max: The maximum value\n· Rand: Randomly one of the values",
+					"annotation_name" : "Output Mode",
 					"appearance" : 4,
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
@@ -2273,29 +2296,29 @@
 					"presentation_rect" : [ 7.0, 53.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "Avg", "Min", "Max", "Rand" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Output mode",
-							"parameter_longname" : "Ouput mode[1]",
+							"parameter_annotation_name" : "Output Mode",
+							"parameter_longname" : "Ouput Mode[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 3,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Output mode",
-							"parameter_enum" : [ "Avg", "Min", "Max", "Rand" ]
+							"parameter_shortname" : "Output Mode"
 						}
 
 					}
 ,
 					"textjustification" : 0,
-					"varname" : "Ouput mode[1]"
+					"varname" : "Ouput Mode[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"annotation" : "The number of steps in the sequencer.\n\n· Small: 16 steps\n· Med: 32 steps\n· Large: 64 steps",
-					"annotation_name" : "Sequencer size",
+					"annotation_name" : "Sequencer Size",
 					"appearance" : 4,
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
@@ -2311,29 +2334,30 @@
 					"presentation_rect" : [ 7.0, 15.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "Small", "Med", "Large" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Sequencer size",
-							"parameter_longname" : "Sequencer size[1]",
+							"parameter_annotation_name" : "Sequencer Size",
+							"parameter_longname" : "Sequencer Size[1]",
 							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 2.0 ],
-							"parameter_shortname" : "Seq Size",
-							"parameter_enum" : [ "Small", "Med", "Large" ]
+							"parameter_shortname" : "Seq Size"
 						}
 
 					}
 ,
 					"textjustification" : 0,
-					"varname" : "Sequencer size[1]"
+					"varname" : "Sequencer Size[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"annotation" : "Automatically randomize this step pattern every time it loops.",
-					"annotation_name" : "Auto randomize",
+					"annotation_name" : "Auto Randomize Third Pattern",
 					"automation" : "off",
 					"automationon" : "on",
 					"fontface" : 1,
@@ -2346,29 +2370,29 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 827.183308919270871, 383.0, 26.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 116.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 169.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto randomize",
-							"parameter_longname" : "Auto-random 3[1]",
+							"parameter_annotation_name" : "Auto Randomize Third Pattern",
+							"parameter_longname" : "Auto Random Third[1]",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Auto-random 3",
-							"parameter_enum" : [ "off", "on" ]
+							"parameter_shortname" : "Auto Rand Third"
 						}
 
 					}
 ,
 					"texton" : "A",
-					"varname" : "Auto-random 3[1]"
+					"varname" : "Auto Random Third[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"annotation" : "Randomize this step pattern.",
-					"annotation_name" : "Randomize",
+					"annotation_name" : "Randomize Third Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-25",
@@ -2380,16 +2404,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 859.516642252604129, 383.0, 26.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 132.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 186.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize",
+							"parameter_annotation_name" : "Randomize Third Pattern",
 							"parameter_longname" : "live.text[7]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "live.text"
 						}
 
 					}
@@ -2401,8 +2425,8 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Clears the step pattern.",
-					"annotation_name" : "Reset",
+					"annotation" : "Clears this step pattern.",
+					"annotation_name" : "Clear Third Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-26",
@@ -2414,16 +2438,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 891.8499755859375, 383.0, 26.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 148.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 203.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Reset",
+							"parameter_annotation_name" : "Clear Third Pattern",
 							"parameter_longname" : "Reset[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Reset",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "Reset"
 						}
 
 					}
@@ -2436,7 +2460,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "Automatically randomize this step pattern every time it loops.",
-					"annotation_name" : "Auto randomize",
+					"annotation_name" : "Auto Randomize Second Pattern",
 					"automation" : "off",
 					"automationon" : "on",
 					"fontface" : 1,
@@ -2449,31 +2473,31 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 827.183308919270871, 296.53125, 27.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 62.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 88.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto randomize",
-							"parameter_longname" : "Auto-random 2[1]",
+							"parameter_annotation_name" : "Auto Randomize Second Pattern",
+							"parameter_longname" : "Auto Random Second[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Auto random 2",
-							"parameter_enum" : [ "off", "on" ]
+							"parameter_shortname" : "Auto Rand Second"
 						}
 
 					}
 ,
 					"texton" : "A",
-					"varname" : "Auto-random 2[1]"
+					"varname" : "Auto Random Second[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"annotation" : "Randomize this step pattern.",
-					"annotation_name" : "Randomize",
+					"annotation_name" : "Randomize Second Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-17",
@@ -2485,16 +2509,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 859.516642252604129, 296.53125, 27.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 78.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 105.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize",
+							"parameter_annotation_name" : "Randomize Second Pattern",
 							"parameter_longname" : "live.text[3]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "live.text"
 						}
 
 					}
@@ -2506,8 +2530,8 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Clears the step pattern.",
-					"annotation_name" : "Reset",
+					"annotation" : "Clears this step pattern.",
+					"annotation_name" : "Clear Second Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-18",
@@ -2519,16 +2543,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 891.8499755859375, 296.53125, 27.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 95.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 122.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Reset",
+							"parameter_annotation_name" : "Clear Second Pattern",
 							"parameter_longname" : "Reset",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Reset",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "Reset"
 						}
 
 					}
@@ -2541,7 +2565,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "Automatically randomize this step pattern every time it loops.",
-					"annotation_name" : "Auto randomize",
+					"annotation_name" : "Auto Randomize First Pattern",
 					"automation" : "off",
 					"automationon" : "on",
 					"fontface" : 1,
@@ -2554,31 +2578,31 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 827.183308919270871, 210.0, 27.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 8.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 7.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto randomize",
-							"parameter_longname" : "Auto-random 1[1]",
+							"parameter_annotation_name" : "Auto Randomize First Pattern",
+							"parameter_longname" : "Auto Random First[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Auto random 1",
-							"parameter_enum" : [ "off", "on" ]
+							"parameter_shortname" : "Auto Rand First"
 						}
 
 					}
 ,
 					"texton" : "A",
-					"varname" : "Auto-random 1[1]"
+					"varname" : "Auto Random First[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"annotation" : "Randomize this step pattern.",
-					"annotation_name" : "Randomize",
+					"annotation_name" : "Randomize First Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-2",
@@ -2593,13 +2617,13 @@
 					"presentation_rect" : [ 611.0, 24.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize",
+							"parameter_annotation_name" : "Randomize First Pattern",
 							"parameter_longname" : "live.text[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "rand[1]",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "rand[1]"
 						}
 
 					}
@@ -2611,8 +2635,8 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Clears the step pattern.",
-					"annotation_name" : "Reset",
+					"annotation" : "Clears this step pattern.",
+					"annotation_name" : "Clear FIrst Pattern",
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
 					"id" : "obj-1",
@@ -2624,16 +2648,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 891.8499755859375, 210.0, 27.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 40.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 611.0, 41.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_annotation_name" : "Reset",
+							"parameter_annotation_name" : "Clear FIrst Pattern",
 							"parameter_longname" : "reset[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "reset[1]",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_shortname" : "reset[1]"
 						}
 
 					}
@@ -3378,7 +3402,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 553.0, 123.734375, 30.0, 30.0 ]
 								}
 
@@ -3429,18 +3453,6 @@
 									"outlettype" : [ "float" ],
 									"patching_rect" : [ 93.0, 502.0, 29.25, 22.0 ],
 									"text" : "* 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 179.516304347826008, 389.734375, 39.0, 22.0 ],
-									"text" : "/ 100."
 								}
 
 							}
@@ -3536,7 +3548,7 @@
 							}
 , 							{
 								"box" : 								{
-									"comment" : "gate percent",
+									"comment" : "slew (0.0 - 1.0)",
 									"id" : "obj-22",
 									"index" : 2,
 									"maxclass" : "inlet",
@@ -3655,13 +3667,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 1 ],
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
 									"source" : [ "obj-16", 0 ]
 								}
@@ -3713,7 +3718,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-8", 1 ],
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -5078,7 +5083,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "The transition speed to each step's value.\n\n0% = Step values output immediately\n50% = Glides to the value in half a step\n100% = Glides to the value over a step",
+					"annotation" : "The transition speed to each new value as a fraction of a step.\n\n0 = Step values output immediately\n0.5 = Glides to the value in half a step\n1.0 = Glides to the value over an entire step",
 					"annotation_name" : "Slew",
 					"appearance" : 4,
 					"fontface" : 1,
@@ -5094,12 +5099,12 @@
 					"presentation_rect" : [ 7.0, 117.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 1,
-							"parameter_unitstyle" : 5,
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1,
 							"parameter_linknames" : 1,
 							"parameter_annotation_name" : "Slew",
 							"parameter_longname" : "Slew[1]",
-							"parameter_mmax" : 100.0,
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Slew"
 						}
 
@@ -5131,7 +5136,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "The speed of the sequencer. All options are synced to the transport.\n\n1 = a 4/4 measure (4 beats)\n1/4 = a quarter note (1 beat)\n1/16 = a sixteenth note",
-					"annotation_name" : "Sequencer rate",
+					"annotation_name" : "Sequencer Rate",
 					"appearance" : 4,
 					"fontface" : 1,
 					"fontname" : "Ableton Sans",
@@ -5147,16 +5152,16 @@
 					"presentation_rect" : [ 7.0, 149.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "8", "7", "6", "5", "4", "3", "2.5", "2", "1.5", "1.25", "1", "3/4", "1/2", "3/8", "1/3", "5/16", "1/4", "1/5", "1/6", "3/16", "1/8", "1/10", "1/12", "1/16", "1/20", "1/24", "1/32", "1/48", "1/64", "1/96", "1/128" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Sequencer rate",
+							"parameter_annotation_name" : "Sequencer Rate",
 							"parameter_longname" : "Rate[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 30,
 							"parameter_initial" : [ 23.0 ],
-							"parameter_shortname" : "Rate",
-							"parameter_enum" : [ "8", "7", "6", "5", "4", "3", "2.5", "2", "1.5", "1.25", "1", "3/4", "1/2", "3/8", "1/3", "5/16", "1/4", "1/5", "1/6", "3/16", "1/8", "1/10", "1/12", "1/16", "1/20", "1/24", "1/32", "1/48", "1/64", "1/96", "1/128" ]
+							"parameter_shortname" : "Rate"
 						}
 
 					}
@@ -5234,7 +5239,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.556221008300781, 510.0, 40.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 8.0, 564.0, 46.0 ],
+					"presentation_rect" : [ 44.0, 8.0, 564.0, 73.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_type" : 3,
@@ -5274,7 +5279,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 566.34375, 510.0, 40.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 62.0, 564.0, 46.0 ],
+					"presentation_rect" : [ 44.0, 89.0, 564.0, 73.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_type" : 3,
@@ -5314,7 +5319,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 685.07286326090491, 510.0, 40.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 116.0, 564.0, 46.0 ],
+					"presentation_rect" : [ 44.0, 170.0, 564.0, 73.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_type" : 3,
@@ -5367,34 +5372,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.07843137254902, 0.0, 0.862745098039216, 1.0 ],
-					"destination" : [ "obj-13", 0 ],
-					"order" : 3,
-					"source" : [ "obj-101", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.07843137254902, 0.0, 0.862745098039216, 1.0 ],
-					"destination" : [ "obj-24", 7 ],
-					"order" : 2,
-					"source" : [ "obj-101", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-101", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -5613,6 +5591,40 @@
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-3", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.07843137254902, 0.0, 0.862745098039216, 1.0 ],
+					"destination" : [ "obj-13", 0 ],
+					"order" : 3,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.07843137254902, 0.0, 0.862745098039216, 1.0 ],
+					"destination" : [ "obj-24", 7 ],
+					"order" : 2,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 1,
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -5964,24 +5976,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
-			"obj-17" : [ "live.text[3]", "live.text", 0 ],
-			"obj-19" : [ "live.step[1]", "live.step", 0 ],
 			"obj-1" : [ "reset[1]", "reset[1]", 0 ],
-			"obj-15" : [ "Ouput mode[1]", "Output mode", 0 ],
-			"obj-29" : [ "Play mode[1]", "Play mode", 0 ],
-			"obj-5" : [ "live.step", "live.step", 0 ],
-			"obj-101" : [ "Number of patterns[1]", "Num. patterns", 0 ],
-			"obj-10" : [ "Sequencer size[1]", "Seq Size", 0 ],
-			"obj-12" : [ "Auto-random 1[1]", "Auto random 1", 0 ],
-			"obj-23" : [ "Auto-random 3[1]", "Auto-random 3", 0 ],
-			"obj-25" : [ "live.text[7]", "live.text", 0 ],
-			"obj-54" : [ "Rate[1]", "Rate", 0 ],
+			"obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
 			"obj-26" : [ "Reset[1]", "Reset", 0 ],
-			"obj-20" : [ "live.step[2]", "live.step", 0 ],
+			"obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
+			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
+			"obj-19" : [ "live.step[1]", "live.step", 0 ],
+			"obj-23" : [ "Auto Random Third[1]", "Auto Rand Third", 0 ],
+			"obj-54" : [ "Rate[1]", "Rate", 0 ],
+			"obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
+			"obj-5" : [ "live.step", "live.step", 0 ],
 			"obj-36" : [ "Slew[1]", "Slew", 0 ],
-			"obj-16" : [ "Auto-random 2[1]", "Auto random 2", 0 ],
 			"obj-18" : [ "Reset", "Reset", 0 ],
+			"obj-10" : [ "Sequencer Size[1]", "Seq Size", 0 ],
+			"obj-20" : [ "live.step[2]", "live.step", 0 ],
+			"obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
+			"obj-17" : [ "live.text[3]", "live.text", 0 ],
+			"obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-25" : [ "live.text[7]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}

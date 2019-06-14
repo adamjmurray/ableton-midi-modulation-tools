@@ -2,8 +2,13 @@
 Sequencer:
 * Make retrig per track.
   - Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
-* Fix automation names
 * Maybe allow automation for pattern start/stop? Might be too messy though
+  * This could work if we get rid of the dragable loop bar and replace with `length` and
+    `offset` controls where the dragable loop bar used to be
+  * It would still be nice to automatically grow / shrink the seq for 16, 32, and 64 sizing
+    based on the max length of all the (visible) patterns
+  * Consider init'ing to length 16 and 1x pattern for simplicity when first getting started / learning the device
+  * Reorder params on size for intuitiveness? rate, slew, playback mode, num patterns, out
 * Test save/restore behavior
 
 New Random By Note device
