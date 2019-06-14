@@ -2,7 +2,6 @@
 Sequencer:
 * Make retrig per track.
   - Maybe a one shot mode? Could have 3 modes: sync (loop), retrig (loop), one shot (or "1x" for short?)
-* Retrig seems to work now but there's still some issue with looping and retrig
 * Fix automation names
 * Maybe allow automation for pattern start/stop? Might be too messy though
 * Test save/restore behavior
