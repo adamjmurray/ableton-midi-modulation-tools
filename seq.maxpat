@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 698.0, 363.0, 1009.0, 764.0 ],
+		"rect" : [ 362.0, 377.0, 1009.0, 764.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,62 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "Controls how the pattern starts and loops.\n\n· Sync: Sync to the transport and loop\n· Trig: Restart on each note and loop\n· Once: Restart on each note without looping",
+					"annotation_name" : "Play mode",
+					"appearance" : 4,
+					"fontface" : 1,
+					"fontname" : "Ableton Sans",
+					"id" : "obj-29",
+					"lcdbgcolor" : [ 0.117647058823529, 0.117647058823529, 0.117647058823529, 0.0 ],
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 16.0, 175.0, 42.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 85.5, 34.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 0,
+							"parameter_linknames" : 1,
+							"parameter_annotation_name" : "Play mode",
+							"parameter_longname" : "Play mode[1]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 2,
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Play mode",
+							"parameter_enum" : [ "Sync", "Trig", "Once" ]
+						}
+
+					}
+,
+					"textjustification" : 0,
+					"varname" : "Play mode[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
+					"fontface" : 1,
+					"fontname" : "Ableton Sans",
+					"fontsize" : 9.5,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 118.34375, 309.46875, 42.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 73.0, 30.0, 18.0 ],
+					"text" : "Play",
+					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"linecount" : 3,
@@ -116,7 +172,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 698.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -142,7 +197,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 626.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -180,7 +234,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 554.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -230,7 +283,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 455.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -256,7 +308,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 383.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -294,7 +345,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -344,7 +394,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 212.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -370,7 +419,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 140.0, 293.0, 58.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "presentation_rect 611 $1 18 18"
 								}
 
@@ -719,7 +767,6 @@
 					}
 ,
 					"patching_rect" : [ 814.516642252604129, 91.0, 93.0, 50.0 ],
-					"presentation_linecount" : 4,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1795,7 +1842,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.34375, 262.5, 17.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 30.23956298828125, 17.0, 18.0 ],
+					"presentation_rect" : [ 9.0, 25.23956298828125, 17.0, 18.0 ],
 					"text" : "x",
 					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
 				}
@@ -1803,7 +1850,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Controls whether this is 1, 2, or 3 step patterns in each modulation sequencer. \n\nWhen there is more than one pattern, they output a single value per step as determined by the \"Out\" mode.",
+					"annotation" : "The number of patterns in this sequencer. \n\nWhen there is more than one pattern, they output a single value per step as determined by the \"Out\" mode.",
 					"annotation_name" : "Number",
 					"appearance" : 4,
 					"fontface" : 1,
@@ -1817,10 +1864,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 711.8499755859375, 43.265625, 26.0, 16.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 31.73956298828125, 34.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 27.73956298828125, 34.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "Add", "Addx3", "Min", "Max", "Rand" ],
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
@@ -1830,7 +1876,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 3.0,
 							"parameter_initial" : [ 3 ],
-							"parameter_shortname" : "Num. patterns"
+							"parameter_shortname" : "Num. patterns",
+							"parameter_enum" : [ "Add", "Addx3", "Min", "Max", "Rand" ]
 						}
 
 					}
@@ -2125,7 +2172,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.34375, 309.46875, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 114.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 6.0, 41.0, 30.0, 18.0 ],
 					"text" : "Out",
 					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
 				}
@@ -2143,7 +2190,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 67.34375, 308.46875, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 6.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 6.0, 4.0, 30.0, 18.0 ],
 					"text" : "Size",
 					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
 				}
@@ -2165,10 +2212,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 407.346240234374932, 591.0, 42.0, 14.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 126.0, 34.0, 16.0 ],
+					"presentation_rect" : [ 7.0, 53.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "Avg", "Min", "Max", "Rand" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
@@ -2177,7 +2223,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 3,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Output mode"
+							"parameter_shortname" : "Output mode",
+							"parameter_enum" : [ "Avg", "Min", "Max", "Rand" ]
 						}
 
 					}
@@ -2189,7 +2236,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Chooses a sequencer with 16, 32, or 64 steps.",
+					"annotation" : "The number of steps in the sequencer.\n\n· Small: 16 steps\n· Med: 32 steps\n· Large: 64 steps",
 					"annotation_name" : "Sequencer size",
 					"appearance" : 4,
 					"fontface" : 1,
@@ -2203,10 +2250,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 161.34375, 32.96875, 42.0, 14.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 18.0, 34.0, 16.0 ],
+					"presentation_rect" : [ 7.0, 15.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "Small", "Med", "Large" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
@@ -2215,7 +2261,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 2.0 ],
-							"parameter_shortname" : "Seq Size"
+							"parameter_shortname" : "Seq Size",
+							"parameter_enum" : [ "Small", "Med", "Large" ]
 						}
 
 					}
@@ -2244,12 +2291,12 @@
 					"presentation_rect" : [ 611.0, 116.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Auto randomize",
 							"parameter_longname" : "Auto-random 3",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Auto-random 3"
+							"parameter_shortname" : "Auto-random 3",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -2277,13 +2324,13 @@
 					"presentation_rect" : [ 611.0, 132.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Randomize",
 							"parameter_longname" : "live.text[7]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2311,13 +2358,13 @@
 					"presentation_rect" : [ 611.0, 148.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Reset",
 							"parameter_longname" : "Reset[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Reset"
+							"parameter_shortname" : "Reset",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2346,14 +2393,14 @@
 					"presentation_rect" : [ 611.0, 62.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Auto randomize",
 							"parameter_longname" : "Auto-random 2",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Auto random 2"
+							"parameter_shortname" : "Auto random 2",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -2381,13 +2428,13 @@
 					"presentation_rect" : [ 611.0, 78.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Randomize",
 							"parameter_longname" : "live.text[3]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2415,13 +2462,13 @@
 					"presentation_rect" : [ 611.0, 95.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Reset",
 							"parameter_longname" : "Reset",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "Reset"
+							"parameter_shortname" : "Reset",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2450,14 +2497,14 @@
 					"presentation_rect" : [ 611.0, 8.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Auto randomize",
 							"parameter_longname" : "Auto-random 1",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "Auto random 1"
+							"parameter_shortname" : "Auto random 1",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -2485,13 +2532,13 @@
 					"presentation_rect" : [ 611.0, 24.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Randomize",
 							"parameter_longname" : "live.text[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "rand[1]"
+							"parameter_shortname" : "rand[1]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2519,13 +2566,13 @@
 					"presentation_rect" : [ 611.0, 40.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_annotation_name" : "Reset",
 							"parameter_longname" : "reset[1]",
 							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "reset[1]"
+							"parameter_shortname" : "reset[1]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -5000,7 +5047,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 67.34375, 285.46875, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 79.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 6.0, 105.0, 30.0, 18.0 ],
 					"text" : "Slew",
 					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
 				}
@@ -5008,7 +5055,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Controls the transition speed to each step's value.\n\n0% = Step values output immediately\n50% = Glides to the value in half a step\n100% = Glides to the value over a step",
+					"annotation" : "The transition speed to each step's value.\n\n0% = Step values output immediately\n50% = Glides to the value in half a step\n100% = Glides to the value over a step",
 					"annotation_name" : "Slew",
 					"appearance" : 4,
 					"fontface" : 1,
@@ -5021,7 +5068,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 248.348730468749977, 591.0, 46.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 91.0, 36.0, 16.0 ],
+					"presentation_rect" : [ 7.0, 117.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_type" : 1,
@@ -5052,7 +5099,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.34375, 285.46875, 29.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 48.0, 29.0, 18.0 ],
+					"presentation_rect" : [ 6.0, 137.0, 29.0, 18.0 ],
 					"text" : "Rate",
 					"textcolor" : [ 0.549019607843137, 0.549019607843137, 0.549019607843137, 1.0 ]
 				}
@@ -5060,7 +5107,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Chooses the speed of the sequencer. All options are synced to the transport.\n\n1 = a measure\n1/4 = a quarter note (a beat)",
+					"annotation" : "The speed of the sequencer. All options are synced to the transport.\n\n1 = a 4/4 measure (4 beats)\n1/4 = a quarter note (1 beat)\n1/16 = a sixteenth note",
 					"annotation_name" : "Sequencer rate",
 					"appearance" : 4,
 					"fontface" : 1,
@@ -5074,10 +5121,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 168.8499755859375, 352.0, 42.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 60.0, 34.0, 16.0 ],
+					"presentation_rect" : [ 7.0, 149.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "8", "7", "6", "5", "4", "3", "2.5", "2", "1.5", "1.25", "1", "3/4", "1/2", "3/8", "1/3", "5/16", "1/4", "1/5", "1/6", "3/16", "1/8", "1/10", "1/12", "1/16", "1/20", "1/24", "1/32", "1/48", "1/64", "1/96", "1/128" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_linknames" : 1,
@@ -5086,7 +5132,8 @@
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 30,
 							"parameter_initial" : [ 23.0 ],
-							"parameter_shortname" : "Rate"
+							"parameter_shortname" : "Rate",
+							"parameter_enum" : [ "8", "7", "6", "5", "4", "3", "2.5", "2", "1.5", "1.25", "1", "3/4", "1/2", "3/8", "1/3", "5/16", "1/4", "1/5", "1/6", "3/16", "1/8", "1/10", "1/12", "1/16", "1/20", "1/24", "1/32", "1/48", "1/64", "1/96", "1/128" ]
 						}
 
 					}
@@ -5701,25 +5748,16 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
 					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
-					"destination" : [ "obj-22", 0 ],
-					"order" : 4,
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
-					"destination" : [ "obj-39", 0 ],
 					"order" : 2,
 					"source" : [ "obj-63", 0 ]
 				}
@@ -5728,8 +5766,26 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+					"destination" : [ "obj-22", 0 ],
+					"order" : 5,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+					"destination" : [ "obj-39", 0 ],
+					"order" : 3,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
 					"destination" : [ "obj-48", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -5746,7 +5802,7 @@
 				"patchline" : 				{
 					"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
 					"destination" : [ "obj-76", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -5855,23 +5911,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20" : [ "live.step[2]", "live.step", 0 ],
-			"obj-1" : [ "reset[1]", "reset[1]", 0 ],
-			"obj-16" : [ "Auto-random 2", "Auto random 2", 0 ],
-			"obj-101" : [ "Number of patterns", "Num. patterns", 0 ],
-			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
-			"obj-36" : [ "Slew[1]", "Slew", 0 ],
 			"obj-12" : [ "Auto-random 1", "Auto random 1", 0 ],
-			"obj-25" : [ "live.text[7]", "live.text", 0 ],
-			"obj-5" : [ "live.step", "live.step", 0 ],
-			"obj-18" : [ "Reset", "Reset", 0 ],
-			"obj-26" : [ "Reset[1]", "Reset", 0 ],
-			"obj-19" : [ "live.step[1]", "live.step", 0 ],
-			"obj-54" : [ "Rate", "Rate", 0 ],
-			"obj-10" : [ "Sequencer size[1]", "Seq Size", 0 ],
+			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
 			"obj-17" : [ "live.text[3]", "live.text", 0 ],
+			"obj-19" : [ "live.step[1]", "live.step", 0 ],
+			"obj-1" : [ "reset[1]", "reset[1]", 0 ],
 			"obj-15" : [ "Ouput mode[1]", "Output mode", 0 ],
+			"obj-29" : [ "Play mode[1]", "Play mode", 0 ],
+			"obj-5" : [ "live.step", "live.step", 0 ],
+			"obj-10" : [ "Sequencer size[1]", "Seq Size", 0 ],
 			"obj-23" : [ "Auto-random 3", "Auto-random 3", 0 ],
+			"obj-16" : [ "Auto-random 2", "Auto random 2", 0 ],
+			"obj-25" : [ "live.text[7]", "live.text", 0 ],
+			"obj-54" : [ "Rate", "Rate", 0 ],
+			"obj-101" : [ "Number of patterns", "Num. patterns", 0 ],
+			"obj-26" : [ "Reset[1]", "Reset", 0 ],
+			"obj-36" : [ "Slew[1]", "Slew", 0 ],
+			"obj-20" : [ "live.step[2]", "live.step", 0 ],
+			"obj-18" : [ "Reset", "Reset", 0 ],
 			"parameterbanks" : 			{
 
 			}
