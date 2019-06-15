@@ -7,15 +7,15 @@ Sequencer:
     `offset` controls where the dragable loop bar used to be
   * It would still be nice to automatically grow / shrink the seq for 16, 32, and 64 sizing
     based on the max length of all the (visible) patterns
-  * Consider init'ing to length 16 and 1x pattern for simplicity when first getting started / learning the device
-  * Reorder params on size for intuitiveness? rate, slew, playback mode, num patterns, out
+* Reorder params on size for intuitiveness? rate, slew, playback mode, num patterns, out
+* Consider init'ing to small (16 step) size and 1x pattern for simplicity when first getting started / learning the device
 * Test save/restore behavior
 
 New Random By Note device
 * Uses the 6-mod paradigm
 * Each of the enabled mods will send a new random value on every note on
 * independent controls for min and max values
-* "variance" option that morphs from a gausian distribution
+* "variance" option that morphs from a gausian distribution around the midpoint to completely random (a visualization would be cool...)
 * brainstorming:
   * option to randomize every X notes
-  * slide param to slowly morph to next value. can by synced
+  * slide/slew param to slowly morph to next value. can by synced

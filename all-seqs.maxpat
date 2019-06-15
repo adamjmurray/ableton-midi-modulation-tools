@@ -697,23 +697,416 @@
 		"parameters" : 		{
 			"obj-7::obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
 			"obj-7::obj-1" : [ "reset[1]", "reset[1]", 0 ],
+			"obj-15::obj-54" : [ "Rate[4]", "Rate", 0 ],
 			"obj-7::obj-26" : [ "Reset[1]", "Reset", 0 ],
+			"obj-8::obj-19" : [ "live.step[5]", "live.step", 0 ],
+			"obj-10::obj-17" : [ "live.text[10]", "live.text", 0 ],
+			"obj-15::obj-16" : [ "Auto Random Second[4]", "Auto Rand Second", 0 ],
+			"obj-10::obj-26" : [ "Reset[4]", "Reset", 0 ],
+			"obj-16::obj-20" : [ "live.step[14]", "live.step", 0 ],
+			"obj-15::obj-36" : [ "Slew[4]", "Slew", 0 ],
+			"obj-15::obj-23" : [ "Auto Random Third[4]", "Auto Rand Third", 0 ],
+			"obj-19::obj-101" : [ "Number of Patterns[6]", "Num Patterns", 0 ],
+			"obj-10::obj-19" : [ "live.step[7]", "live.step", 0 ],
+			"obj-15::obj-15" : [ "Ouput Mode[4]", "Output Mode", 0 ],
+			"obj-16::obj-18" : [ "Reset[9]", "Reset", 0 ],
+			"obj-19::obj-17" : [ "live.text[18]", "live.text", 0 ],
 			"obj-7::obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
+			"obj-8::obj-29" : [ "Playback Mode[2]", "Playback Mode", 0 ],
+			"obj-15::obj-25" : [ "live.text[12]", "live.text", 0 ],
+			"obj-8::obj-2" : [ "live.text[5]", "rand[1]", 0 ],
+			"obj-19::obj-25" : [ "live.text[17]", "live.text", 0 ],
+			"obj-19::obj-10" : [ "Sequencer Size[6]", "Seq Size", 0 ],
 			"obj-7::obj-2" : [ "live.text[1]", "rand[1]", 0 ],
+			"obj-8::obj-10" : [ "Sequencer Size[2]", "Seq Size", 0 ],
+			"obj-19::obj-18" : [ "Reset[11]", "Reset", 0 ],
 			"obj-7::obj-19" : [ "live.step[1]", "live.step", 0 ],
+			"obj-8::obj-16" : [ "Auto Random Second[2]", "Auto Rand Second", 0 ],
 			"obj-7::obj-23" : [ "Auto Random Third[1]", "Auto Rand Third", 0 ],
 			"obj-7::obj-54" : [ "Rate[1]", "Rate", 0 ],
+			"obj-8::obj-23" : [ "Auto Random Third[2]", "Auto Rand Third", 0 ],
+			"obj-8::obj-12" : [ "Auto Random First[2]", "Auto Rand First", 0 ],
+			"obj-16::obj-19" : [ "live.step[13]", "live.step", 0 ],
+			"obj-19::obj-12" : [ "Auto Random First[6]", "Auto Rand First", 0 ],
 			"obj-7::obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
 			"obj-7::obj-5" : [ "live.step", "live.step", 0 ],
+			"obj-8::obj-26" : [ "Reset[2]", "Reset", 0 ],
+			"obj-15::obj-17" : [ "live.text[11]", "live.text", 0 ],
+			"obj-19::obj-16" : [ "Auto Random Second[6]", "Auto Rand Second", 0 ],
+			"obj-15::obj-5" : [ "live.step[9]", "live.step", 0 ],
+			"obj-16::obj-10" : [ "Sequencer Size[5]", "Seq Size", 0 ],
+			"obj-10::obj-20" : [ "live.step[6]", "live.step", 0 ],
 			"obj-7::obj-36" : [ "Slew[1]", "Slew", 0 ],
+			"obj-16::obj-16" : [ "Auto Random Second[5]", "Auto Rand Second", 0 ],
+			"obj-19::obj-15" : [ "Ouput Mode[6]", "Output Mode", 0 ],
+			"obj-10::obj-2" : [ "live.text[8]", "rand[1]", 0 ],
+			"obj-10::obj-54" : [ "Rate[3]", "Rate", 0 ],
+			"obj-15::obj-101" : [ "Number of Patterns[4]", "Num Patterns", 0 ],
+			"obj-16::obj-23" : [ "Auto Random Third[5]", "Auto Rand Third", 0 ],
+			"obj-16::obj-2" : [ "live.text[16]", "rand[1]", 0 ],
+			"obj-19::obj-19" : [ "live.step[15]", "live.step", 0 ],
+			"obj-8::obj-5" : [ "live.step[4]", "live.step", 0 ],
 			"obj-7::obj-18" : [ "Reset", "Reset", 0 ],
+			"obj-15::obj-1" : [ "reset[4]", "reset[1]", 0 ],
+			"obj-16::obj-12" : [ "Auto Random First[5]", "Auto Rand First", 0 ],
+			"obj-8::obj-36" : [ "Slew[2]", "Slew", 0 ],
+			"obj-10::obj-101" : [ "Number of Patterns[3]", "Num Patterns", 0 ],
+			"obj-16::obj-26" : [ "Reset[8]", "Reset", 0 ],
+			"obj-19::obj-26" : [ "Reset[10]", "Reset", 0 ],
+			"obj-8::obj-17" : [ "live.text[4]", "live.text", 0 ],
+			"obj-8::obj-15" : [ "Ouput Mode[2]", "Output Mode", 0 ],
+			"obj-16::obj-25" : [ "live.text[15]", "live.text", 0 ],
+			"obj-19::obj-1" : [ "reset[6]", "reset[1]", 0 ],
+			"obj-10::obj-18" : [ "Reset[5]", "Reset", 0 ],
+			"obj-19::obj-29" : [ "Playback Mode[6]", "Playback Mode", 0 ],
+			"obj-10::obj-25" : [ "live.text[9]", "live.text", 0 ],
+			"obj-19::obj-36" : [ "Slew[6]", "Slew", 0 ],
+			"obj-15::obj-18" : [ "Reset[6]", "Reset", 0 ],
+			"obj-16::obj-15" : [ "Ouput Mode[5]", "Output Mode", 0 ],
+			"obj-19::obj-5" : [ "live.step[17]", "live.step", 0 ],
+			"obj-16::obj-5" : [ "live.step[12]", "live.step", 0 ],
+			"obj-19::obj-2" : [ "live.text[19]", "rand[1]", 0 ],
+			"obj-15::obj-26" : [ "Reset[7]", "Reset", 0 ],
+			"obj-16::obj-36" : [ "Slew[5]", "Slew", 0 ],
+			"obj-16::obj-1" : [ "reset[5]", "reset[1]", 0 ],
 			"obj-7::obj-10" : [ "Sequencer Size[1]", "Seq Size", 0 ],
+			"obj-15::obj-19" : [ "live.step[10]", "live.step", 0 ],
+			"obj-16::obj-101" : [ "Number of Patterns[5]", "Num Patterns", 0 ],
+			"obj-15::obj-29" : [ "Playback Mode[4]", "Playback Mode", 0 ],
+			"obj-15::obj-10" : [ "Sequencer Size[4]", "Seq Size", 0 ],
+			"obj-19::obj-20" : [ "live.step[16]", "live.step", 0 ],
 			"obj-7::obj-20" : [ "live.step[2]", "live.step", 0 ],
+			"obj-8::obj-25" : [ "live.text[6]", "live.text", 0 ],
+			"obj-10::obj-10" : [ "Sequencer Size[3]", "Seq Size", 0 ],
+			"obj-16::obj-29" : [ "Playback Mode[5]", "Playback Mode", 0 ],
+			"obj-8::obj-20" : [ "live.step[3]", "live.step", 0 ],
+			"obj-10::obj-15" : [ "Ouput Mode[3]", "Output Mode", 0 ],
 			"obj-7::obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
+			"obj-10::obj-16" : [ "Auto Random Second[3]", "Auto Rand Second", 0 ],
+			"obj-8::obj-54" : [ "Rate[2]", "Rate", 0 ],
+			"obj-16::obj-17" : [ "live.text[14]", "live.text", 0 ],
+			"obj-10::obj-23" : [ "Auto Random Third[3]", "Auto Rand Third", 0 ],
+			"obj-10::obj-5" : [ "live.step[8]", "live.step", 0 ],
+			"obj-16::obj-54" : [ "Rate[5]", "Rate", 0 ],
+			"obj-8::obj-1" : [ "reset[2]", "reset[1]", 0 ],
+			"obj-10::obj-12" : [ "Auto Random First[3]", "Auto Rand First", 0 ],
 			"obj-7::obj-17" : [ "live.text[3]", "live.text", 0 ],
+			"obj-8::obj-101" : [ "Number of Patterns[2]", "Num Patterns", 0 ],
+			"obj-15::obj-2" : [ "live.text[13]", "rand[1]", 0 ],
+			"obj-10::obj-1" : [ "reset[3]", "reset[1]", 0 ],
+			"obj-8::obj-18" : [ "Reset[3]", "Reset", 0 ],
+			"obj-10::obj-29" : [ "Playback Mode[3]", "Playback Mode", 0 ],
 			"obj-7::obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-19::obj-23" : [ "Auto Random Third[6]", "Auto Rand Third", 0 ],
 			"obj-7::obj-25" : [ "live.text[7]", "live.text", 0 ],
+			"obj-15::obj-20" : [ "live.step[11]", "live.step", 0 ],
+			"obj-10::obj-36" : [ "Slew[3]", "Slew", 0 ],
+			"obj-15::obj-12" : [ "Auto Random First[4]", "Auto Rand First", 0 ],
+			"obj-19::obj-54" : [ "Rate[6]", "Rate", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-15::obj-54" : 				{
+					"parameter_longname" : "Rate[4]"
+				}
+,
+				"obj-10::obj-17" : 				{
+					"parameter_longname" : "live.text[10]"
+				}
+,
+				"obj-15::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[4]"
+				}
+,
+				"obj-10::obj-26" : 				{
+					"parameter_longname" : "Reset[4]"
+				}
+,
+				"obj-15::obj-36" : 				{
+					"parameter_longname" : "Slew[4]"
+				}
+,
+				"obj-15::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[4]"
+				}
+,
+				"obj-19::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[6]"
+				}
+,
+				"obj-15::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[4]"
+				}
+,
+				"obj-16::obj-18" : 				{
+					"parameter_longname" : "Reset[9]"
+				}
+,
+				"obj-19::obj-17" : 				{
+					"parameter_longname" : "live.text[18]"
+				}
+,
+				"obj-8::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[2]"
+				}
+,
+				"obj-15::obj-25" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-8::obj-2" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-19::obj-25" : 				{
+					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-19::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[6]"
+				}
+,
+				"obj-8::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[2]"
+				}
+,
+				"obj-19::obj-18" : 				{
+					"parameter_longname" : "Reset[11]"
+				}
+,
+				"obj-8::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[2]"
+				}
+,
+				"obj-8::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[2]"
+				}
+,
+				"obj-8::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[2]"
+				}
+,
+				"obj-19::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[6]"
+				}
+,
+				"obj-8::obj-26" : 				{
+					"parameter_longname" : "Reset[2]"
+				}
+,
+				"obj-15::obj-17" : 				{
+					"parameter_longname" : "live.text[11]"
+				}
+,
+				"obj-19::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[6]"
+				}
+,
+				"obj-16::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[5]"
+				}
+,
+				"obj-16::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[5]"
+				}
+,
+				"obj-19::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[6]"
+				}
+,
+				"obj-10::obj-2" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
+				"obj-10::obj-54" : 				{
+					"parameter_longname" : "Rate[3]"
+				}
+,
+				"obj-15::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[4]"
+				}
+,
+				"obj-16::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[5]"
+				}
+,
+				"obj-16::obj-2" : 				{
+					"parameter_longname" : "live.text[16]"
+				}
+,
+				"obj-15::obj-1" : 				{
+					"parameter_longname" : "reset[4]"
+				}
+,
+				"obj-16::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[5]"
+				}
+,
+				"obj-8::obj-36" : 				{
+					"parameter_longname" : "Slew[2]"
+				}
+,
+				"obj-10::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[3]"
+				}
+,
+				"obj-16::obj-26" : 				{
+					"parameter_longname" : "Reset[8]"
+				}
+,
+				"obj-19::obj-26" : 				{
+					"parameter_longname" : "Reset[10]"
+				}
+,
+				"obj-8::obj-17" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-8::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[2]"
+				}
+,
+				"obj-16::obj-25" : 				{
+					"parameter_longname" : "live.text[15]"
+				}
+,
+				"obj-19::obj-1" : 				{
+					"parameter_longname" : "reset[6]"
+				}
+,
+				"obj-10::obj-18" : 				{
+					"parameter_longname" : "Reset[5]"
+				}
+,
+				"obj-19::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[6]"
+				}
+,
+				"obj-10::obj-25" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-19::obj-36" : 				{
+					"parameter_longname" : "Slew[6]"
+				}
+,
+				"obj-15::obj-18" : 				{
+					"parameter_longname" : "Reset[6]"
+				}
+,
+				"obj-16::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[5]"
+				}
+,
+				"obj-19::obj-2" : 				{
+					"parameter_longname" : "live.text[19]"
+				}
+,
+				"obj-15::obj-26" : 				{
+					"parameter_longname" : "Reset[7]"
+				}
+,
+				"obj-16::obj-36" : 				{
+					"parameter_longname" : "Slew[5]"
+				}
+,
+				"obj-16::obj-1" : 				{
+					"parameter_longname" : "reset[5]"
+				}
+,
+				"obj-16::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[5]"
+				}
+,
+				"obj-15::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[4]"
+				}
+,
+				"obj-15::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[4]"
+				}
+,
+				"obj-8::obj-25" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-10::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[3]"
+				}
+,
+				"obj-16::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[5]"
+				}
+,
+				"obj-10::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[3]"
+				}
+,
+				"obj-10::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[3]"
+				}
+,
+				"obj-8::obj-54" : 				{
+					"parameter_longname" : "Rate[2]"
+				}
+,
+				"obj-16::obj-17" : 				{
+					"parameter_longname" : "live.text[14]"
+				}
+,
+				"obj-10::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[3]"
+				}
+,
+				"obj-16::obj-54" : 				{
+					"parameter_longname" : "Rate[5]"
+				}
+,
+				"obj-8::obj-1" : 				{
+					"parameter_longname" : "reset[2]"
+				}
+,
+				"obj-10::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[3]"
+				}
+,
+				"obj-8::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[2]"
+				}
+,
+				"obj-15::obj-2" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-10::obj-1" : 				{
+					"parameter_longname" : "reset[3]"
+				}
+,
+				"obj-8::obj-18" : 				{
+					"parameter_longname" : "Reset[3]"
+				}
+,
+				"obj-10::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[3]"
+				}
+,
+				"obj-19::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[6]"
+				}
+,
+				"obj-10::obj-36" : 				{
+					"parameter_longname" : "Slew[3]"
+				}
+,
+				"obj-15::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[4]"
+				}
+,
+				"obj-19::obj-54" : 				{
+					"parameter_longname" : "Rate[6]"
+				}
 
 			}
 
@@ -727,7 +1120,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "seq-len.maxpat",
+				"name" : "seq-ctrl.maxpat",
 				"bootpath" : "D:/workspace/Max/Max-for-Live/ableton-midi-modulation-tools",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
