@@ -1,8 +1,8 @@
 ## TODO:
 Note Mod Randomizer
-* legato option (ignore noteons while note still held) to help with poly playback
 * Rev option glides from new value to previous value (let's try global at first)
 * Finish annotations and UI input names
+* Reset button (to reset pitch bend, etc)? Could use the MIDI Controls device though...
 
 All Devices
 * Every mod source (except in Monitor) should have an enable/disable button and pass through the value when disabled. It should not pass through when enabled.
