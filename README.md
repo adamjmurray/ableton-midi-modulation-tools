@@ -1,7 +1,4 @@
 ## TODO:
-Note Mod Randomizer
-* Test reverse glide when glide is disabled (maybe it will produce audible artifacts?)
-
 All Devices
 * Every mod source (except in Monitor) should have an enable/disable button and pass through the value when disabled. It should not pass through when enabled.
   - When the Controls are enabled, they should immediately send the current value. This can be used as a "reset" control after the note randomizer (e.g. to reset the pitch bend)
