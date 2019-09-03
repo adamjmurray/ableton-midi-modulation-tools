@@ -5,7 +5,7 @@ A collection of Ableton Live MIDI Effect devices for working with MIDI modulatio
 
 ## Installation
 
-* [Download.](https://github.com/adamjmurray/ableton-midi-modulation-tools/archive/master.zip)
+* [Download version 1.0](https://github.com/adamjmurray/ableton-midi-modulation-tools/archive/1.0.zip)
 * Unzip and put the folder wherever you want. Keep the files together because some devices will not work without other files in the folder.
 
 
@@ -59,6 +59,3 @@ A collection of Ableton Live MIDI Effect devices for working with MIDI modulatio
 
 ![screenshot](./screenshots/Note-Mod-Randomizer.png)
 
-
-
-**[Download the devices here.](https://github.com/adamjmurray/ableton-midi-modulation-tools/archive/master.zip)**
