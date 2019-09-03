@@ -56,7 +56,6 @@ A collection of Ableton Live MIDI Effect devices for working with MIDI modulatio
 * Reverse glide from the new value back to the current value to create more contrast between notes.
 * Optional legato randomizes values only on the first note of overlapping notes (useful for chords).
 
-
 ![screenshot](./screenshots/Note-Mod-Randomizer.png)
 
 
