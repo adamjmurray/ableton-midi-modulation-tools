@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 192.0, 900.0, 719.0 ],
+		"rect" : [ 225.0, 222.0, 900.0, 719.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,96 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-55",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.8499755859375, 430.0, 89.0, 36.0 ],
+					"text" : "if $i1 == 0 then 0.5 else 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.8499755859375, 516.0, 160.641789899553544, 22.0 ],
+					"text" : "bgfillcolor 0.33 0.33 0.33 $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.33, 0.33, 0.33, 0.5 ],
+					"id" : "obj-37",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.8499755859375, 549.0, 68.0, 65.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 44.0, 8.0, 564.0, 154.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 145.925074404761915, 441.0, 40.0, 22.0 ],
+					"text" : "* 0.26"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 82.491765485491044, 481.0, 138.0, 22.0 ],
+					"text" : "hbgcolor 0.98 0.99 0. $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 191.991765485491044, 441.0, 51.0, 22.0 ],
+					"text" : "gate 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "activated",
+					"id" : "obj-30",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 191.991765485491044, 397.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -48,8 +138,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -268,8 +358,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -488,8 +578,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -752,7 +842,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 155.8499755859375, 333.0, 29.5, 22.0 ],
+					"patching_rect" : [ 178.991765485491044, 330.0, 29.5, 22.0 ],
 					"text" : "> 0"
 				}
 
@@ -764,7 +854,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 207.491765485491044, 317.0, 29.5, 22.0 ],
+					"patching_rect" : [ 230.633555385044588, 314.0, 29.5, 22.0 ],
 					"text" : "< 2"
 				}
 
@@ -783,21 +873,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 155.8499755859375, 274.0, 42.0, 15.0 ],
+					"patching_rect" : [ 178.991765485491044, 278.0, 42.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 85.5, 34.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Playback Mode",
+							"parameter_longname" : "Playback Mode[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "Playback Mode",
 							"parameter_enum" : [ "Sync", "Trig", "Once" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Playback Mode",
-							"parameter_longname" : "Playback Mode[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -837,8 +927,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1557,8 +1647,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1768,8 +1858,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1979,8 +2069,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2191,8 +2281,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2587,16 +2677,16 @@
 					"presentation_rect" : [ 7.0, 27.73956298828125, 34.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Number of Patterns",
+							"parameter_longname" : "Number of Patterns[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "Num Patterns",
 							"parameter_enum" : [ "1", "2", "3" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Number of Patterns",
-							"parameter_longname" : "Number of Patterns[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2628,8 +2718,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2809,16 +2899,16 @@
 					"presentation_rect" : [ 7.0, 53.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Output Mode",
+							"parameter_longname" : "Ouput Mode[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 3,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "Output Mode",
 							"parameter_enum" : [ "Avg", "Min", "Max", "Rand" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Output Mode",
-							"parameter_longname" : "Ouput Mode[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2847,6 +2937,10 @@
 					"presentation_rect" : [ 7.0, 15.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Sequencer Size",
+							"parameter_longname" : "Sequencer Size[1]",
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
 							"parameter_mmax" : 2,
 							"parameter_initial" : [ 0 ],
 							"parameter_order" : 99,
@@ -2854,11 +2948,7 @@
 							"parameter_enum" : [ "Small", "Med", "Large" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Sequencer Size",
-							"parameter_longname" : "Sequencer Size[1]",
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2887,13 +2977,13 @@
 					"presentation_rect" : [ 611.0, 331.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Auto Randomize Third Pattern",
+							"parameter_longname" : "Auto Random Third[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Auto Rand Third",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto Randomize Third Pattern",
-							"parameter_longname" : "Auto Random Third[1]"
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -2921,13 +3011,13 @@
 					"presentation_rect" : [ 611.0, 348.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Randomize Third Pattern",
+							"parameter_longname" : "live.text[7]",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize Third Pattern",
-							"parameter_longname" : "live.text[7]",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -2955,13 +3045,13 @@
 					"presentation_rect" : [ 611.0, 365.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Clear Third Pattern",
+							"parameter_longname" : "Reset[1]",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Reset",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Clear Third Pattern",
-							"parameter_longname" : "Reset[1]",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -2990,15 +3080,15 @@
 					"presentation_rect" : [ 611.0, 169.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Auto Randomize Second Pattern",
+							"parameter_longname" : "Auto Random Second[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "Auto Rand Second",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto Randomize Second Pattern",
-							"parameter_longname" : "Auto Random Second[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -3026,13 +3116,13 @@
 					"presentation_rect" : [ 611.0, 186.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Randomize Second Pattern",
+							"parameter_longname" : "live.text[3]",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize Second Pattern",
-							"parameter_longname" : "live.text[3]",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -3060,13 +3150,13 @@
 					"presentation_rect" : [ 611.0, 203.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Clear Second Pattern",
+							"parameter_longname" : "Reset",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Reset",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Clear Second Pattern",
-							"parameter_longname" : "Reset",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -3095,15 +3185,15 @@
 					"presentation_rect" : [ 611.0, 7.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Auto Randomize First Pattern",
+							"parameter_longname" : "Auto Random First[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "Auto Rand First",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Auto Randomize First Pattern",
-							"parameter_longname" : "Auto Random First[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -3131,13 +3221,13 @@
 					"presentation_rect" : [ 611.0, 24.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Randomize First Pattern",
+							"parameter_longname" : "live.text[1]",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "rand[1]",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Randomize First Pattern",
-							"parameter_longname" : "live.text[1]",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -3165,13 +3255,13 @@
 					"presentation_rect" : [ 611.0, 41.0, 18.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Clear FIrst Pattern",
+							"parameter_longname" : "reset[1]",
+							"parameter_invisible" : 2,
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "reset[1]",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_annotation_name" : "Clear FIrst Pattern",
-							"parameter_longname" : "reset[1]",
-							"parameter_invisible" : 2
+							"parameter_type" : 2
 						}
 
 					}
@@ -3192,8 +3282,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3249,8 +3339,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 6,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3593,8 +3683,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 6,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4381,8 +4471,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4647,8 +4737,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5030,8 +5120,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5572,7 +5662,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 110.8499755859375, 369.5, 109.0, 22.0 ],
+					"patching_rect" : [ 133.991765485491044, 366.5, 109.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5620,13 +5710,13 @@
 					"presentation_rect" : [ 7.0, 117.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Slew",
+							"parameter_longname" : "Slew[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "Slew",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Slew",
-							"parameter_longname" : "Slew[1]"
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -5668,21 +5758,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 110.8499755859375, 274.0, 35.0, 15.0 ],
+					"patching_rect" : [ 133.991765485491044, 278.0, 35.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 149.0, 34.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_annotation_name" : "Sequencer Rate",
+							"parameter_longname" : "Rate[1]",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 32,
 							"parameter_initial" : [ 25.0 ],
 							"parameter_shortname" : "Rate",
 							"parameter_enum" : [ "16", "12", "8", "7", "6", "5", "4", "3", "2.5", "2", "1.5", "1.25", "1", "3/4", "1/2", "3/8", "1/3", "5/16", "1/4", "1/5", "1/6", "3/16", "1/8", "1/10", "1/12", "1/16", "1/20", "1/24", "1/32", "1/48", "1/64", "1/96", "1/128" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_linknames" : 1,
-							"parameter_annotation_name" : "Sequencer Rate",
-							"parameter_longname" : "Rate[1]",
-							"parameter_initial_enable" : 1
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -5766,13 +5856,13 @@
 					"presentation_rect" : [ 44.0, 8.0, 564.0, 154.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 48, 38, 4, 70, 77, 64, 88, 4, 56, 119, 63, 84, 4, 83, 77, 67, 121, 4, 117, 121, 53, 79, 4, 112, 25, 56, 92, 4, 114, 71, 58, 30, 4, 114, 84, 62, 118, 4, 35, 80, 60, 95, 4, 19, 31, 61, 64, 4, 23, 38, 57, 125, 4, 27, 6, 57, 18, 4, 107, 87, 54, 30, 4, 66, 87, 52, 80, 4, 80, 11, 51, 4, 4, 13, 65, 68, 29, 4, 59, 98 ],
-							"parameter_shortname" : "First Pattern[1]",
-							"parameter_type" : 3,
 							"parameter_annotation_name" : "Step pattern",
 							"parameter_longname" : "First Pattern[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 48, 38, 4, 70, 77, 64, 88, 4, 56, 119, 63, 84, 4, 83, 77, 67, 121, 4, 117, 121, 53, 79, 4, 112, 25, 56, 92, 4, 114, 71, 58, 30, 4, 114, 84, 62, 118, 4, 35, 80, 60, 95, 4, 19, 31, 61, 64, 4, 23, 38, 57, 125, 4, 27, 6, 57, 18, 4, 107, 87, 54, 30, 4, 66, 87, 52, 80, 4, 80, 11, 51, 4, 4, 13, 65, 68, 29, 4, 59, 98 ],
+							"parameter_shortname" : "First Pattern[1]",
+							"parameter_type" : 3
 						}
 
 					}
@@ -5810,13 +5900,13 @@
 					"presentation_rect" : [ 44.0, 170.0, 564.0, 154.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 65, 23, 4, 27, 76, 69, 17, 4, 72, 40, 54, 120, 4, 123, 27, 50, 14, 4, 0, 86, 49, 119, 4, 116, 100, 62, 113, 4, 12, 43, 56, 95, 4, 86, 60, 64, 56, 4, 99, 93, 53, 16, 4, 9, 39, 60, 42, 4, 60, 46, 61, 48, 4, 52, 3, 63, 45, 4, 76, 96, 60, 52, 4, 13, 28, 49, 88, 4, 83, 42, 58, 54, 4, 115, 80, 60, 99, 4, 67, 113 ],
-							"parameter_shortname" : "Second Pattern[1]",
-							"parameter_type" : 3,
 							"parameter_annotation_name" : "Step pattern",
 							"parameter_longname" : "Second Pattern[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 65, 23, 4, 27, 76, 69, 17, 4, 72, 40, 54, 120, 4, 123, 27, 50, 14, 4, 0, 86, 49, 119, 4, 116, 100, 62, 113, 4, 12, 43, 56, 95, 4, 86, 60, 64, 56, 4, 99, 93, 53, 16, 4, 9, 39, 60, 42, 4, 60, 46, 61, 48, 4, 52, 3, 63, 45, 4, 76, 96, 60, 52, 4, 13, 28, 49, 88, 4, 83, 42, 58, 54, 4, 115, 80, 60, 99, 4, 67, 113 ],
+							"parameter_shortname" : "Second Pattern[1]",
+							"parameter_type" : 3
 						}
 
 					}
@@ -5854,13 +5944,13 @@
 					"presentation_rect" : [ 44.0, 332.0, 564.0, 154.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 66, 15, 4, 68, 10, 68, 69, 4, 54, 127, 52, 33, 4, 85, 32, 50, 67, 4, 32, 8, 67, 53, 4, 5, 7, 55, 105, 4, 68, 54, 66, 122, 4, 5, 34, 64, 40, 4, 3, 17, 69, 52, 4, 11, 77, 59, 89, 4, 123, 74, 48, 40, 4, 68, 11, 61, 13, 4, 101, 108, 50, 96, 4, 116, 35, 52, 122, 4, 57, 35, 60, 32, 4, 100, 82, 53, 45, 4, 4, 97 ],
-							"parameter_shortname" : "Third Pattern[1]",
-							"parameter_type" : 3,
 							"parameter_annotation_name" : "Step pattern",
 							"parameter_longname" : "Third Pattern[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_initial" : [ 2, 16, 0, 16, 0, 1, 12, 0, 16, 59.0, 80.0, 0, 0, 60, 101, 4, 0, 127, 63, 83, 4, 0, 127, 67, 57, 4, 0, 127, 74, 78, 4, 0, 127, 70, 35, 4, 0, 127, 67, 75, 4, 0, 127, 60, 114, 4, 0, 127, 70, 75, 4, 0, 127, 67, 59, 4, 0, 127, 79, 80, 4, 0, 127, 60, 100, 4, 0, 127, 70, 84, 4, 0, 127, 60, 114, 4, 0, 127, 63, 98, 4, 0, 127, 70, 97, 4, 0, 127, 62, 103, 4, 0, 127, 1, 12, 0, 16, 48.0, 71.0, 0, 0, 66, 15, 4, 68, 10, 68, 69, 4, 54, 127, 52, 33, 4, 85, 32, 50, 67, 4, 32, 8, 67, 53, 4, 5, 7, 55, 105, 4, 68, 54, 66, 122, 4, 5, 34, 64, 40, 4, 3, 17, 69, 52, 4, 11, 77, 59, 89, 4, 123, 74, 48, 40, 4, 68, 11, 61, 13, 4, 101, 108, 50, 96, 4, 116, 35, 52, 122, 4, 57, 35, 60, 32, 4, 100, 82, 53, 45, 4, 4, 97 ],
+							"parameter_shortname" : "Third Pattern[1]",
+							"parameter_type" : 3
 						}
 
 					}
@@ -6143,6 +6233,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 0,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 2,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 1,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -6186,6 +6300,33 @@
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
+					"destination" : [ "obj-9", 0 ],
+					"order" : 2,
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -6284,27 +6425,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-42", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
-					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
-					"source" : [ "obj-42", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.811764705882353, 0.372549019607843, 0.372549019607843, 1.0 ],
-					"destination" : [ "obj-9", 0 ],
-					"order" : 2,
+					"destination" : [ "obj-34", 1 ],
 					"source" : [ "obj-42", 1 ]
 				}
 
@@ -6354,6 +6475,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"order" : 2,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-53", 1 ]
@@ -6380,6 +6532,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
@@ -6586,23 +6752,23 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20" : [ "First Pattern[1]", "First Pattern[1]", 0 ],
-			"obj-17" : [ "live.text[3]", "live.text", 0 ],
 			"obj-23" : [ "Auto Random Third[1]", "Auto Rand Third", 0 ],
+			"obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
+			"obj-20" : [ "First Pattern[1]", "First Pattern[1]", 0 ],
+			"obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
+			"obj-19" : [ "Second Pattern[1]", "Second Pattern[1]", 0 ],
+			"obj-1" : [ "reset[1]", "reset[1]", 0 ],
+			"obj-10" : [ "Sequencer Size[1]", "Seq Size", 99 ],
+			"obj-18" : [ "Reset", "Reset", 0 ],
+			"obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
+			"obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
+			"obj-36" : [ "Slew[1]", "Slew", 0 ],
+			"obj-17" : [ "live.text[3]", "live.text", 0 ],
 			"obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
 			"obj-5" : [ "Third Pattern[1]", "Third Pattern[1]", 0 ],
-			"obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
 			"obj-25" : [ "live.text[7]", "live.text", 0 ],
 			"obj-26" : [ "Reset[1]", "Reset", 0 ],
-			"obj-10" : [ "Sequencer Size[1]", "Seq Size", 99 ],
-			"obj-36" : [ "Slew[1]", "Slew", 0 ],
-			"obj-19" : [ "Second Pattern[1]", "Second Pattern[1]", 0 ],
-			"obj-2" : [ "live.text[1]", "rand[1]", 0 ],
-			"obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
-			"obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
-			"obj-18" : [ "Reset", "Reset", 0 ],
-			"obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
-			"obj-1" : [ "reset[1]", "reset[1]", 0 ],
 			"obj-54" : [ "Rate[1]", "Rate", 0 ],
 			"parameterbanks" : 			{
 

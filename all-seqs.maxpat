@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 68.0, 953.0, 1229.0 ],
+		"rect" : [ 207.0, 90.0, 953.0, 1210.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,55 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 542.0, 127.5, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 514.0, 88.0, 47.0, 22.0 ],
+					"text" : "unpack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 502.0, 162.0, 71.5, 22.0 ],
+					"text" : "gate 6 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : " active seqIndex",
+					"id" : "obj-20",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 514.0, 43.5, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "@stepcolor", 0.722, 0.553, 1.0, 1.0, "@stepcolor2", 0.392, 0.302, 0.545, 1.0, "@signed", 0 ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -49,7 +98,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -72,7 +121,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -95,7 +144,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -118,7 +167,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -141,7 +190,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -164,7 +213,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "seq.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -222,8 +271,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 6,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -660,6 +709,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
@@ -667,8 +723,71 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-23", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-23", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-23", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-23", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 1 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-24", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -695,357 +814,161 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-23" : [ "Auto Random Third[3]", "Auto Rand Third", 0 ],
-			"obj-19::obj-26" : [ "Reset[10]", "Reset", 0 ],
-			"obj-7::obj-20" : [ "First Pattern[1]", "First Pattern[1]", 0 ],
-			"obj-10::obj-101" : [ "Number of Patterns[3]", "Num Patterns", 0 ],
-			"obj-7::obj-17" : [ "live.text[3]", "live.text", 0 ],
-			"obj-8::obj-5" : [ "Third Pattern[2]", "Third Pattern[1]", 0 ],
-			"obj-16::obj-25" : [ "live.text[15]", "live.text", 0 ],
 			"obj-7::obj-23" : [ "Auto Random Third[1]", "Auto Rand Third", 0 ],
-			"obj-15::obj-23" : [ "Auto Random Third[4]", "Auto Rand Third", 0 ],
-			"obj-8::obj-17" : [ "live.text[4]", "live.text", 0 ],
-			"obj-8::obj-23" : [ "Auto Random Third[2]", "Auto Rand Third", 0 ],
-			"obj-10::obj-20" : [ "First Pattern[3]", "First Pattern[1]", 0 ],
-			"obj-16::obj-12" : [ "Auto Random First[5]", "Auto Rand First", 0 ],
-			"obj-19::obj-19" : [ "Second Pattern[6]", "Second Pattern[1]", 0 ],
-			"obj-15::obj-54" : [ "Rate[4]", "Rate", 0 ],
-			"obj-7::obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
-			"obj-8::obj-54" : [ "Rate[2]", "Rate", 0 ],
-			"obj-16::obj-19" : [ "Second Pattern[5]", "Second Pattern[1]", 0 ],
-			"obj-19::obj-17" : [ "live.text[19]", "live.text", 0 ],
-			"obj-7::obj-5" : [ "Third Pattern[1]", "Third Pattern[1]", 0 ],
-			"obj-15::obj-2" : [ "live.text[11]", "rand[1]", 0 ],
-			"obj-10::obj-54" : [ "Rate[3]", "Rate", 0 ],
-			"obj-19::obj-23" : [ "Auto Random Third[6]", "Auto Rand Third", 0 ],
-			"obj-10::obj-2" : [ "live.text[9]", "rand[1]", 0 ],
-			"obj-7::obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-15::obj-20" : [ "First Pattern[4]", "First Pattern[1]", 0 ],
+			"obj-8::obj-2" : [ "live.text[5]", "rand[1]", 0 ],
 			"obj-16::obj-23" : [ "Auto Random Third[5]", "Auto Rand Third", 0 ],
-			"obj-10::obj-10" : [ "Sequencer Size[3]", "Seq Size", 99 ],
-			"obj-19::obj-16" : [ "Auto Random Second[6]", "Auto Rand Second", 0 ],
-			"obj-16::obj-15" : [ "Ouput Mode[5]", "Output Mode", 0 ],
-			"obj-10::obj-25" : [ "live.text[6]", "live.text", 0 ],
-			"obj-8::obj-10" : [ "Sequencer Size[2]", "Seq Size", 99 ],
-			"obj-8::obj-12" : [ "Auto Random First[2]", "Auto Rand First", 0 ],
-			"obj-10::obj-19" : [ "Second Pattern[3]", "Second Pattern[1]", 0 ],
-			"obj-16::obj-29" : [ "Playback Mode[5]", "Playback Mode", 0 ],
-			"obj-15::obj-10" : [ "Sequencer Size[4]", "Seq Size", 99 ],
-			"obj-8::obj-29" : [ "Playback Mode[2]", "Playback Mode", 0 ],
-			"obj-15::obj-5" : [ "Third Pattern[4]", "Third Pattern[1]", 0 ],
-			"obj-7::obj-25" : [ "live.text[7]", "live.text", 0 ],
-			"obj-19::obj-18" : [ "Reset[11]", "Reset", 0 ],
-			"obj-19::obj-5" : [ "Third Pattern[6]", "Third Pattern[1]", 0 ],
-			"obj-15::obj-29" : [ "Playback Mode[4]", "Playback Mode", 0 ],
-			"obj-19::obj-15" : [ "Ouput Mode[6]", "Output Mode", 0 ],
-			"obj-7::obj-26" : [ "Reset[1]", "Reset", 0 ],
-			"obj-16::obj-1" : [ "reset[5]", "reset[1]", 0 ],
-			"obj-7::obj-10" : [ "Sequencer Size[1]", "Seq Size", 99 ],
-			"obj-10::obj-12" : [ "Auto Random First[3]", "Auto Rand First", 0 ],
-			"obj-19::obj-36" : [ "Slew[6]", "Slew", 0 ],
-			"obj-16::obj-10" : [ "Sequencer Size[5]", "Seq Size", 99 ],
-			"obj-7::obj-36" : [ "Slew[1]", "Slew", 0 ],
-			"obj-10::obj-18" : [ "Reset[5]", "Reset", 0 ],
-			"obj-8::obj-36" : [ "Slew[2]", "Slew", 0 ],
-			"obj-8::obj-19" : [ "Second Pattern[2]", "Second Pattern[1]", 0 ],
-			"obj-15::obj-36" : [ "Slew[4]", "Slew", 0 ],
-			"obj-8::obj-15" : [ "Ouput Mode[2]", "Output Mode", 0 ],
-			"obj-15::obj-19" : [ "Second Pattern[4]", "Second Pattern[1]", 0 ],
-			"obj-16::obj-54" : [ "Rate[5]", "Rate", 0 ],
-			"obj-7::obj-19" : [ "Second Pattern[1]", "Second Pattern[1]", 0 ],
-			"obj-15::obj-26" : [ "Reset[7]", "Reset", 0 ],
-			"obj-16::obj-20" : [ "First Pattern[5]", "First Pattern[1]", 0 ],
-			"obj-19::obj-54" : [ "Rate[6]", "Rate", 0 ],
-			"obj-15::obj-18" : [ "Reset[6]", "Reset", 0 ],
-			"obj-7::obj-2" : [ "live.text[1]", "rand[1]", 0 ],
-			"obj-10::obj-1" : [ "reset[3]", "reset[1]", 0 ],
-			"obj-19::obj-101" : [ "Number of Patterns[6]", "Num Patterns", 0 ],
-			"obj-15::obj-12" : [ "Auto Random First[4]", "Auto Rand First", 0 ],
-			"obj-19::obj-29" : [ "Playback Mode[6]", "Playback Mode", 0 ],
-			"obj-7::obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
-			"obj-16::obj-17" : [ "live.text[16]", "live.text", 0 ],
-			"obj-7::obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
-			"obj-7::obj-18" : [ "Reset", "Reset", 0 ],
-			"obj-8::obj-16" : [ "Auto Random Second[2]", "Auto Rand Second", 0 ],
-			"obj-16::obj-101" : [ "Number of Patterns[5]", "Num Patterns", 0 ],
-			"obj-10::obj-29" : [ "Playback Mode[3]", "Playback Mode", 0 ],
-			"obj-8::obj-1" : [ "reset[2]", "reset[1]", 0 ],
-			"obj-10::obj-5" : [ "Third Pattern[3]", "Third Pattern[1]", 0 ],
-			"obj-16::obj-2" : [ "live.text[14]", "rand[1]", 0 ],
-			"obj-15::obj-1" : [ "reset[4]", "reset[1]", 0 ],
-			"obj-8::obj-18" : [ "Reset[2]", "Reset", 0 ],
-			"obj-16::obj-5" : [ "Third Pattern[5]", "Third Pattern[1]", 0 ],
-			"obj-15::obj-101" : [ "Number of Patterns[4]", "Num Patterns", 0 ],
-			"obj-7::obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
-			"obj-10::obj-36" : [ "Slew[3]", "Slew", 0 ],
-			"obj-19::obj-2" : [ "live.text[17]", "rand[1]", 0 ],
-			"obj-8::obj-25" : [ "live.text[8]", "live.text", 0 ],
+			"obj-15::obj-16" : [ "Auto Random Second[4]", "Auto Rand Second", 0 ],
+			"obj-19::obj-19" : [ "Second Pattern[6]", "Second Pattern[1]", 0 ],
+			"obj-8::obj-23" : [ "Auto Random Third[2]", "Auto Rand Third", 0 ],
+			"obj-19::obj-17" : [ "live.text[19]", "live.text", 0 ],
 			"obj-15::obj-25" : [ "live.text[13]", "live.text", 0 ],
-			"obj-10::obj-26" : [ "Reset[4]", "Reset", 0 ],
-			"obj-19::obj-10" : [ "Sequencer Size[6]", "Seq Size", 99 ],
-			"obj-16::obj-16" : [ "Auto Random Second[5]", "Auto Rand Second", 0 ],
-			"obj-7::obj-1" : [ "reset[1]", "reset[1]", 0 ],
+			"obj-7::obj-29" : [ "Playback Mode[1]", "Playback Mode", 0 ],
+			"obj-7::obj-2" : [ "live.text[1]", "rand[1]", 0 ],
+			"obj-10::obj-36" : [ "Slew[3]", "Slew", 0 ],
+			"obj-7::obj-20" : [ "First Pattern[1]", "First Pattern[1]", 0 ],
+			"obj-15::obj-10" : [ "Sequencer Size[4]", "Seq Size", 99 ],
+			"obj-10::obj-17" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-12" : [ "Auto Random First[6]", "Auto Rand First", 0 ],
+			"obj-7::obj-16" : [ "Auto Random Second[1]", "Auto Rand Second", 0 ],
+			"obj-16::obj-54" : [ "Rate[5]", "Rate", 0 ],
+			"obj-8::obj-20" : [ "First Pattern[2]", "First Pattern[1]", 0 ],
 			"obj-10::obj-15" : [ "Ouput Mode[3]", "Output Mode", 0 ],
 			"obj-19::obj-1" : [ "reset[6]", "reset[1]", 0 ],
-			"obj-16::obj-26" : [ "Reset[8]", "Reset", 0 ],
-			"obj-10::obj-17" : [ "live.text[10]", "live.text", 0 ],
-			"obj-8::obj-26" : [ "Reset[3]", "Reset", 0 ],
-			"obj-8::obj-20" : [ "First Pattern[2]", "First Pattern[1]", 0 ],
-			"obj-16::obj-18" : [ "Reset[9]", "Reset", 0 ],
-			"obj-7::obj-54" : [ "Rate[1]", "Rate", 0 ],
-			"obj-8::obj-2" : [ "live.text[5]", "rand[1]", 0 ],
-			"obj-15::obj-20" : [ "First Pattern[4]", "First Pattern[1]", 0 ],
+			"obj-7::obj-19" : [ "Second Pattern[1]", "Second Pattern[1]", 0 ],
 			"obj-16::obj-36" : [ "Slew[5]", "Slew", 0 ],
-			"obj-15::obj-17" : [ "live.text[12]", "live.text", 0 ],
-			"obj-8::obj-101" : [ "Number of Patterns[2]", "Num Patterns", 0 ],
-			"obj-19::obj-20" : [ "First Pattern[6]", "First Pattern[1]", 0 ],
-			"obj-19::obj-12" : [ "Auto Random First[6]", "Auto Rand First", 0 ],
+			"obj-15::obj-19" : [ "Second Pattern[4]", "Second Pattern[1]", 0 ],
+			"obj-16::obj-26" : [ "Reset[8]", "Reset", 0 ],
+			"obj-15::obj-2" : [ "live.text[11]", "rand[1]", 0 ],
+			"obj-16::obj-20" : [ "First Pattern[5]", "First Pattern[1]", 0 ],
+			"obj-8::obj-54" : [ "Rate[2]", "Rate", 0 ],
+			"obj-16::obj-15" : [ "Ouput Mode[5]", "Output Mode", 0 ],
+			"obj-15::obj-18" : [ "Reset[6]", "Reset", 0 ],
+			"obj-8::obj-15" : [ "Ouput Mode[2]", "Output Mode", 0 ],
+			"obj-19::obj-18" : [ "Reset[11]", "Reset", 0 ],
+			"obj-8::obj-25" : [ "live.text[8]", "live.text", 0 ],
 			"obj-15::obj-15" : [ "Ouput Mode[4]", "Output Mode", 0 ],
+			"obj-10::obj-2" : [ "live.text[9]", "rand[1]", 0 ],
+			"obj-19::obj-15" : [ "Ouput Mode[6]", "Output Mode", 0 ],
+			"obj-15::obj-12" : [ "Auto Random First[4]", "Auto Rand First", 0 ],
+			"obj-7::obj-18" : [ "Reset", "Reset", 0 ],
+			"obj-7::obj-10" : [ "Sequencer Size[1]", "Seq Size", 99 ],
+			"obj-7::obj-1" : [ "reset[1]", "reset[1]", 0 ],
+			"obj-10::obj-1" : [ "reset[3]", "reset[1]", 0 ],
+			"obj-16::obj-1" : [ "reset[5]", "reset[1]", 0 ],
+			"obj-10::obj-5" : [ "Third Pattern[3]", "Third Pattern[1]", 0 ],
+			"obj-10::obj-23" : [ "Auto Random Third[3]", "Auto Rand Third", 0 ],
+			"obj-7::obj-101" : [ "Number of Patterns[1]", "Num Patterns", 0 ],
+			"obj-8::obj-36" : [ "Slew[2]", "Slew", 0 ],
+			"obj-15::obj-26" : [ "Reset[7]", "Reset", 0 ],
+			"obj-16::obj-5" : [ "Third Pattern[5]", "Third Pattern[1]", 0 ],
+			"obj-8::obj-18" : [ "Reset[2]", "Reset", 0 ],
+			"obj-15::obj-1" : [ "reset[4]", "reset[1]", 0 ],
+			"obj-19::obj-20" : [ "First Pattern[6]", "First Pattern[1]", 0 ],
+			"obj-8::obj-101" : [ "Number of Patterns[2]", "Num Patterns", 0 ],
+			"obj-19::obj-10" : [ "Sequencer Size[6]", "Seq Size", 99 ],
+			"obj-7::obj-15" : [ "Ouput Mode[1]", "Output Mode", 0 ],
+			"obj-10::obj-25" : [ "live.text[6]", "live.text", 0 ],
+			"obj-19::obj-26" : [ "Reset[10]", "Reset", 0 ],
+			"obj-15::obj-29" : [ "Playback Mode[4]", "Playback Mode", 0 ],
+			"obj-7::obj-36" : [ "Slew[1]", "Slew", 0 ],
+			"obj-10::obj-18" : [ "Reset[5]", "Reset", 0 ],
+			"obj-19::obj-101" : [ "Number of Patterns[6]", "Num Patterns", 0 ],
+			"obj-16::obj-2" : [ "live.text[14]", "rand[1]", 0 ],
+			"obj-8::obj-5" : [ "Third Pattern[2]", "Third Pattern[1]", 0 ],
+			"obj-19::obj-29" : [ "Playback Mode[6]", "Playback Mode", 0 ],
+			"obj-7::obj-17" : [ "live.text[3]", "live.text", 0 ],
+			"obj-8::obj-16" : [ "Auto Random Second[2]", "Auto Rand Second", 0 ],
+			"obj-16::obj-16" : [ "Auto Random Second[5]", "Auto Rand Second", 0 ],
+			"obj-10::obj-26" : [ "Reset[4]", "Reset", 0 ],
+			"obj-15::obj-5" : [ "Third Pattern[4]", "Third Pattern[1]", 0 ],
+			"obj-8::obj-17" : [ "live.text[4]", "live.text", 0 ],
+			"obj-16::obj-10" : [ "Sequencer Size[5]", "Seq Size", 99 ],
+			"obj-15::obj-54" : [ "Rate[4]", "Rate", 0 ],
+			"obj-19::obj-5" : [ "Third Pattern[6]", "Third Pattern[1]", 0 ],
+			"obj-7::obj-12" : [ "Auto Random First[1]", "Auto Rand First", 0 ],
+			"obj-8::obj-10" : [ "Sequencer Size[2]", "Seq Size", 99 ],
+			"obj-16::obj-12" : [ "Auto Random First[5]", "Auto Rand First", 0 ],
+			"obj-8::obj-26" : [ "Reset[3]", "Reset", 0 ],
+			"obj-19::obj-16" : [ "Auto Random Second[6]", "Auto Rand Second", 0 ],
+			"obj-15::obj-23" : [ "Auto Random Third[4]", "Auto Rand Third", 0 ],
+			"obj-10::obj-12" : [ "Auto Random First[3]", "Auto Rand First", 0 ],
+			"obj-19::obj-36" : [ "Slew[6]", "Slew", 0 ],
+			"obj-16::obj-101" : [ "Number of Patterns[5]", "Num Patterns", 0 ],
+			"obj-8::obj-19" : [ "Second Pattern[2]", "Second Pattern[1]", 0 ],
 			"obj-10::obj-16" : [ "Auto Random Second[3]", "Auto Rand Second", 0 ],
+			"obj-19::obj-2" : [ "live.text[17]", "rand[1]", 0 ],
+			"obj-16::obj-25" : [ "live.text[15]", "live.text", 0 ],
+			"obj-10::obj-20" : [ "First Pattern[3]", "First Pattern[1]", 0 ],
+			"obj-10::obj-54" : [ "Rate[3]", "Rate", 0 ],
+			"obj-7::obj-5" : [ "Third Pattern[1]", "Third Pattern[1]", 0 ],
+			"obj-8::obj-29" : [ "Playback Mode[2]", "Playback Mode", 0 ],
+			"obj-16::obj-18" : [ "Reset[9]", "Reset", 0 ],
+			"obj-15::obj-36" : [ "Slew[4]", "Slew", 0 ],
+			"obj-16::obj-19" : [ "Second Pattern[5]", "Second Pattern[1]", 0 ],
+			"obj-8::obj-1" : [ "reset[2]", "reset[1]", 0 ],
+			"obj-16::obj-29" : [ "Playback Mode[5]", "Playback Mode", 0 ],
+			"obj-7::obj-25" : [ "live.text[7]", "live.text", 0 ],
+			"obj-15::obj-101" : [ "Number of Patterns[4]", "Num Patterns", 0 ],
+			"obj-19::obj-23" : [ "Auto Random Third[6]", "Auto Rand Third", 0 ],
+			"obj-15::obj-17" : [ "live.text[12]", "live.text", 0 ],
+			"obj-10::obj-29" : [ "Playback Mode[3]", "Playback Mode", 0 ],
+			"obj-19::obj-54" : [ "Rate[6]", "Rate", 0 ],
+			"obj-7::obj-26" : [ "Reset[1]", "Reset", 0 ],
+			"obj-10::obj-10" : [ "Sequencer Size[3]", "Seq Size", 99 ],
+			"obj-7::obj-54" : [ "Rate[1]", "Rate", 0 ],
+			"obj-10::obj-101" : [ "Number of Patterns[3]", "Num Patterns", 0 ],
+			"obj-10::obj-19" : [ "Second Pattern[3]", "Second Pattern[1]", 0 ],
 			"obj-19::obj-25" : [ "live.text[18]", "live.text", 0 ],
-			"obj-15::obj-16" : [ "Auto Random Second[4]", "Auto Rand Second", 0 ],
+			"obj-8::obj-12" : [ "Auto Random First[2]", "Auto Rand First", 0 ],
+			"obj-16::obj-17" : [ "live.text[16]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-10::obj-23" : 				{
-					"parameter_longname" : "Auto Random Third[3]"
-				}
-,
-				"obj-19::obj-26" : 				{
-					"parameter_longname" : "Reset[10]"
-				}
-,
-				"obj-10::obj-101" : 				{
-					"parameter_longname" : "Number of Patterns[3]"
-				}
-,
-				"obj-16::obj-25" : 				{
-					"parameter_longname" : "live.text[15]"
-				}
-,
-				"obj-15::obj-23" : 				{
-					"parameter_longname" : "Auto Random Third[4]"
-				}
-,
-				"obj-8::obj-17" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-8::obj-23" : 				{
-					"parameter_longname" : "Auto Random Third[2]"
-				}
-,
-				"obj-16::obj-12" : 				{
-					"parameter_longname" : "Auto Random First[5]"
-				}
-,
-				"obj-15::obj-54" : 				{
-					"parameter_longname" : "Rate[4]"
-				}
-,
-				"obj-8::obj-54" : 				{
-					"parameter_longname" : "Rate[2]"
-				}
-,
-				"obj-19::obj-17" : 				{
-					"parameter_longname" : "live.text[19]"
-				}
-,
-				"obj-15::obj-2" : 				{
-					"parameter_longname" : "live.text[11]"
-				}
-,
-				"obj-10::obj-54" : 				{
-					"parameter_longname" : "Rate[3]"
-				}
-,
-				"obj-19::obj-23" : 				{
-					"parameter_longname" : "Auto Random Third[6]"
-				}
-,
-				"obj-10::obj-2" : 				{
-					"parameter_longname" : "live.text[9]"
+				"obj-8::obj-2" : 				{
+					"parameter_longname" : "live.text[5]"
 				}
 ,
 				"obj-16::obj-23" : 				{
 					"parameter_longname" : "Auto Random Third[5]"
 				}
 ,
-				"obj-10::obj-10" : 				{
-					"parameter_longname" : "Sequencer Size[3]"
+				"obj-15::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[4]"
 				}
 ,
-				"obj-19::obj-16" : 				{
-					"parameter_longname" : "Auto Random Second[6]"
+				"obj-8::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[2]"
 				}
 ,
-				"obj-16::obj-15" : 				{
-					"parameter_longname" : "Ouput Mode[5]"
-				}
-,
-				"obj-10::obj-25" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-8::obj-10" : 				{
-					"parameter_longname" : "Sequencer Size[2]"
-				}
-,
-				"obj-8::obj-12" : 				{
-					"parameter_longname" : "Auto Random First[2]"
-				}
-,
-				"obj-16::obj-29" : 				{
-					"parameter_longname" : "Playback Mode[5]"
-				}
-,
-				"obj-15::obj-10" : 				{
-					"parameter_longname" : "Sequencer Size[4]"
-				}
-,
-				"obj-8::obj-29" : 				{
-					"parameter_longname" : "Playback Mode[2]"
-				}
-,
-				"obj-19::obj-18" : 				{
-					"parameter_longname" : "Reset[11]"
-				}
-,
-				"obj-15::obj-29" : 				{
-					"parameter_longname" : "Playback Mode[4]"
-				}
-,
-				"obj-19::obj-15" : 				{
-					"parameter_longname" : "Ouput Mode[6]"
-				}
-,
-				"obj-16::obj-1" : 				{
-					"parameter_longname" : "reset[5]"
-				}
-,
-				"obj-10::obj-12" : 				{
-					"parameter_longname" : "Auto Random First[3]"
-				}
-,
-				"obj-19::obj-36" : 				{
-					"parameter_longname" : "Slew[6]"
-				}
-,
-				"obj-16::obj-10" : 				{
-					"parameter_longname" : "Sequencer Size[5]"
-				}
-,
-				"obj-10::obj-18" : 				{
-					"parameter_longname" : "Reset[5]"
-				}
-,
-				"obj-8::obj-36" : 				{
-					"parameter_longname" : "Slew[2]"
-				}
-,
-				"obj-15::obj-36" : 				{
-					"parameter_longname" : "Slew[4]"
-				}
-,
-				"obj-8::obj-15" : 				{
-					"parameter_longname" : "Ouput Mode[2]"
-				}
-,
-				"obj-16::obj-54" : 				{
-					"parameter_longname" : "Rate[5]"
-				}
-,
-				"obj-15::obj-26" : 				{
-					"parameter_longname" : "Reset[7]"
-				}
-,
-				"obj-19::obj-54" : 				{
-					"parameter_longname" : "Rate[6]"
-				}
-,
-				"obj-15::obj-18" : 				{
-					"parameter_longname" : "Reset[6]"
-				}
-,
-				"obj-10::obj-1" : 				{
-					"parameter_longname" : "reset[3]"
-				}
-,
-				"obj-19::obj-101" : 				{
-					"parameter_longname" : "Number of Patterns[6]"
-				}
-,
-				"obj-15::obj-12" : 				{
-					"parameter_longname" : "Auto Random First[4]"
-				}
-,
-				"obj-19::obj-29" : 				{
-					"parameter_longname" : "Playback Mode[6]"
-				}
-,
-				"obj-16::obj-17" : 				{
-					"parameter_longname" : "live.text[16]"
-				}
-,
-				"obj-8::obj-16" : 				{
-					"parameter_longname" : "Auto Random Second[2]"
-				}
-,
-				"obj-16::obj-101" : 				{
-					"parameter_longname" : "Number of Patterns[5]"
-				}
-,
-				"obj-10::obj-29" : 				{
-					"parameter_longname" : "Playback Mode[3]"
-				}
-,
-				"obj-8::obj-1" : 				{
-					"parameter_longname" : "reset[2]"
-				}
-,
-				"obj-16::obj-2" : 				{
-					"parameter_longname" : "live.text[14]"
-				}
-,
-				"obj-15::obj-1" : 				{
-					"parameter_longname" : "reset[4]"
-				}
-,
-				"obj-8::obj-18" : 				{
-					"parameter_longname" : "Reset[2]"
-				}
-,
-				"obj-15::obj-101" : 				{
-					"parameter_longname" : "Number of Patterns[4]"
-				}
-,
-				"obj-10::obj-36" : 				{
-					"parameter_longname" : "Slew[3]"
-				}
-,
-				"obj-19::obj-2" : 				{
-					"parameter_longname" : "live.text[17]"
-				}
-,
-				"obj-8::obj-25" : 				{
-					"parameter_longname" : "live.text[8]"
+				"obj-19::obj-17" : 				{
+					"parameter_longname" : "live.text[19]"
 				}
 ,
 				"obj-15::obj-25" : 				{
 					"parameter_longname" : "live.text[13]"
 				}
 ,
-				"obj-10::obj-26" : 				{
-					"parameter_longname" : "Reset[4]"
+				"obj-10::obj-36" : 				{
+					"parameter_longname" : "Slew[3]"
 				}
 ,
-				"obj-19::obj-10" : 				{
-					"parameter_longname" : "Sequencer Size[6]"
+				"obj-15::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[4]"
 				}
 ,
-				"obj-16::obj-16" : 				{
-					"parameter_longname" : "Auto Random Second[5]"
+				"obj-10::obj-17" : 				{
+					"parameter_longname" : "live.text[10]"
+				}
+,
+				"obj-19::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[6]"
+				}
+,
+				"obj-16::obj-54" : 				{
+					"parameter_longname" : "Rate[5]"
 				}
 ,
 				"obj-10::obj-15" : 				{
@@ -1056,56 +979,252 @@
 					"parameter_longname" : "reset[6]"
 				}
 ,
-				"obj-16::obj-26" : 				{
-					"parameter_longname" : "Reset[8]"
-				}
-,
-				"obj-10::obj-17" : 				{
-					"parameter_longname" : "live.text[10]"
-				}
-,
-				"obj-8::obj-26" : 				{
-					"parameter_longname" : "Reset[3]"
-				}
-,
-				"obj-16::obj-18" : 				{
-					"parameter_longname" : "Reset[9]"
-				}
-,
-				"obj-8::obj-2" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
 				"obj-16::obj-36" : 				{
 					"parameter_longname" : "Slew[5]"
 				}
 ,
-				"obj-15::obj-17" : 				{
-					"parameter_longname" : "live.text[12]"
+				"obj-16::obj-26" : 				{
+					"parameter_longname" : "Reset[8]"
 				}
 ,
-				"obj-8::obj-101" : 				{
-					"parameter_longname" : "Number of Patterns[2]"
+				"obj-15::obj-2" : 				{
+					"parameter_longname" : "live.text[11]"
 				}
 ,
-				"obj-19::obj-12" : 				{
-					"parameter_longname" : "Auto Random First[6]"
+				"obj-8::obj-54" : 				{
+					"parameter_longname" : "Rate[2]"
+				}
+,
+				"obj-16::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[5]"
+				}
+,
+				"obj-15::obj-18" : 				{
+					"parameter_longname" : "Reset[6]"
+				}
+,
+				"obj-8::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[2]"
+				}
+,
+				"obj-19::obj-18" : 				{
+					"parameter_longname" : "Reset[11]"
+				}
+,
+				"obj-8::obj-25" : 				{
+					"parameter_longname" : "live.text[8]"
 				}
 ,
 				"obj-15::obj-15" : 				{
 					"parameter_longname" : "Ouput Mode[4]"
 				}
 ,
+				"obj-10::obj-2" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-19::obj-15" : 				{
+					"parameter_longname" : "Ouput Mode[6]"
+				}
+,
+				"obj-15::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[4]"
+				}
+,
+				"obj-10::obj-1" : 				{
+					"parameter_longname" : "reset[3]"
+				}
+,
+				"obj-16::obj-1" : 				{
+					"parameter_longname" : "reset[5]"
+				}
+,
+				"obj-10::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[3]"
+				}
+,
+				"obj-8::obj-36" : 				{
+					"parameter_longname" : "Slew[2]"
+				}
+,
+				"obj-15::obj-26" : 				{
+					"parameter_longname" : "Reset[7]"
+				}
+,
+				"obj-8::obj-18" : 				{
+					"parameter_longname" : "Reset[2]"
+				}
+,
+				"obj-15::obj-1" : 				{
+					"parameter_longname" : "reset[4]"
+				}
+,
+				"obj-8::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[2]"
+				}
+,
+				"obj-19::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[6]"
+				}
+,
+				"obj-10::obj-25" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-19::obj-26" : 				{
+					"parameter_longname" : "Reset[10]"
+				}
+,
+				"obj-15::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[4]"
+				}
+,
+				"obj-10::obj-18" : 				{
+					"parameter_longname" : "Reset[5]"
+				}
+,
+				"obj-19::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[6]"
+				}
+,
+				"obj-16::obj-2" : 				{
+					"parameter_longname" : "live.text[14]"
+				}
+,
+				"obj-19::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[6]"
+				}
+,
+				"obj-8::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[2]"
+				}
+,
+				"obj-16::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[5]"
+				}
+,
+				"obj-10::obj-26" : 				{
+					"parameter_longname" : "Reset[4]"
+				}
+,
+				"obj-8::obj-17" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-16::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[5]"
+				}
+,
+				"obj-15::obj-54" : 				{
+					"parameter_longname" : "Rate[4]"
+				}
+,
+				"obj-8::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[2]"
+				}
+,
+				"obj-16::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[5]"
+				}
+,
+				"obj-8::obj-26" : 				{
+					"parameter_longname" : "Reset[3]"
+				}
+,
+				"obj-19::obj-16" : 				{
+					"parameter_longname" : "Auto Random Second[6]"
+				}
+,
+				"obj-15::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[4]"
+				}
+,
+				"obj-10::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[3]"
+				}
+,
+				"obj-19::obj-36" : 				{
+					"parameter_longname" : "Slew[6]"
+				}
+,
+				"obj-16::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[5]"
+				}
+,
 				"obj-10::obj-16" : 				{
 					"parameter_longname" : "Auto Random Second[3]"
+				}
+,
+				"obj-19::obj-2" : 				{
+					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-16::obj-25" : 				{
+					"parameter_longname" : "live.text[15]"
+				}
+,
+				"obj-10::obj-54" : 				{
+					"parameter_longname" : "Rate[3]"
+				}
+,
+				"obj-8::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[2]"
+				}
+,
+				"obj-16::obj-18" : 				{
+					"parameter_longname" : "Reset[9]"
+				}
+,
+				"obj-15::obj-36" : 				{
+					"parameter_longname" : "Slew[4]"
+				}
+,
+				"obj-8::obj-1" : 				{
+					"parameter_longname" : "reset[2]"
+				}
+,
+				"obj-16::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[5]"
+				}
+,
+				"obj-15::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[4]"
+				}
+,
+				"obj-19::obj-23" : 				{
+					"parameter_longname" : "Auto Random Third[6]"
+				}
+,
+				"obj-15::obj-17" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-10::obj-29" : 				{
+					"parameter_longname" : "Playback Mode[3]"
+				}
+,
+				"obj-19::obj-54" : 				{
+					"parameter_longname" : "Rate[6]"
+				}
+,
+				"obj-10::obj-10" : 				{
+					"parameter_longname" : "Sequencer Size[3]"
+				}
+,
+				"obj-10::obj-101" : 				{
+					"parameter_longname" : "Number of Patterns[3]"
 				}
 ,
 				"obj-19::obj-25" : 				{
 					"parameter_longname" : "live.text[18]"
 				}
 ,
-				"obj-15::obj-16" : 				{
-					"parameter_longname" : "Auto Random Second[4]"
+				"obj-8::obj-12" : 				{
+					"parameter_longname" : "Auto Random First[2]"
+				}
+,
+				"obj-16::obj-17" : 				{
+					"parameter_longname" : "live.text[16]"
 				}
 
 			}
