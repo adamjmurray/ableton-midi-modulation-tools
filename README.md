@@ -59,3 +59,28 @@ A collection of Ableton Live MIDI Effect devices for working with MIDI modulatio
 
 ![screenshot](./screenshots/Note-Mod-Randomizer.png)
 
+
+## Tips
+
+### Compatibility
+
+Note that Live's MIDI mappings only work with external MIDI sources like hardware, so you cannot map these devices to arbitrary parameters. The instrument must support MIDI modulation, which most plugin instruments do.
+
+The following built-in Live instruments support MIDI modulation:
+
+* Collision: mod wheel, aftertouch, and pitch bend
+* Operator: mod wheel, aftertouch, and pitch bend
+* Sampler: mod wheel, aftertouch, pitch bend, and custom controller 4 ("foot ctrl")
+* Wavetable: mod wheel ("Mod"), aftertouch ("AT"), and pitch bend ("PB")
+
+Most of Live's instruments respond to pitch bend. The ones listed above can modulate things besides pitch with the pitch bend.
+
+### Control Numbers
+
+Here are common control numbers for the customizable controls:
+* 2: breath controller
+* 4: foot controller (supported by Live's Sampler)
+* 11: expression controller
+* 64: sustain pedal
+
+A plugin might refer to these by name instead of number.
