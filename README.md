@@ -5,7 +5,7 @@ A collection of Ableton Live MIDI Effect devices for working with MIDI modulatio
 
 ## Installation
 
-* [Download version 1.0](https://github.com/adamjmurray/ableton-midi-modulation-tools/archive/1.0.zip)
+* [Download version 1.0.1](https://github.com/adamjmurray/ableton-midi-modulation-tools/archive/1.0.1.zip)
 * Unzip and put the folder wherever you want. Keep the files together because some devices will not work without other files in the folder.
 
 
